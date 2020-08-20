@@ -6,7 +6,7 @@ import logo from "../assets/logo.png";
 
 const NavBar = () => (
   <Row style={{ padding: "1.5rem" }}>
-    <Col xs={12} sm={12} md={12} lg={12} xl={12}>
+    <Col span={12}>
       <img
         src={logo}
         width="50"
@@ -16,11 +16,7 @@ const NavBar = () => (
       />
     </Col>
     <Col
-      xs={12}
-      sm={12}
-      md={12}
-      lg={12}
-      xl={12}
+      span={12}
       style={{
         display: "flex",
         alignItems: "center",
