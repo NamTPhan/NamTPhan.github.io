@@ -5,12 +5,23 @@ import styled from "styled-components";
 
 const styles = {
   cardStyles: {
-    boxShadow: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
+    boxShadow: "0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
+    marginLeft: "10px",
+    marginRight: "10px",
+    marginBottom: "20px",
+    borderRadius: "15px",
   },
 };
 
+const CardTitle = styled.h1`
+  color: "#141c3a";
+  font-weight: 800;
+  font-size: 1.2rem;
+`;
+
 const Icon = styled.p`
   font-size: 48px;
+  margin-bottom: 20px;
 `;
 
 const CardBlock = (props) => {
@@ -18,7 +29,7 @@ const CardBlock = (props) => {
     <Col xs={24} sm={24} md={8} lg={8} xl={8} style={{ textAlign: "center" }}>
       <Card style={styles.cardStyles}>
         <Icon>{props.icon}</Icon>
-        <h1>{props.title}</h1>
+        <CardTitle>{props.title}</CardTitle>
         <p>{props.description}</p>
         <p>{props.subtext}</p>
       </Card>
@@ -27,10 +38,18 @@ const CardBlock = (props) => {
 };
 
 const SkillsSection = () => (
-  <Row>
-    <CardBlock icon={<EditTwoTone />} />
-    <CardBlock icon={<LayoutTwoTone twoToneColor="#eb2f96" />} />
-    <CardBlock icon={<MobileTwoTone twoToneColor="#52c41a" />} />
+  <Row
+    style={{ paddingLeft: "20px", paddingRight: "20px", marginTop: "-80px" }}
+  >
+    <CardBlock icon={<EditTwoTone />} title="Design" />
+    <CardBlock
+      icon={<LayoutTwoTone twoToneColor="#eb2f96" />}
+      title="Web Development"
+    />
+    <CardBlock
+      icon={<MobileTwoTone twoToneColor="#52c41a" />}
+      title="Mobile Development"
+    />
   </Row>
 );
 

@@ -20,12 +20,14 @@ const AboutSection = () => (
       style={{
         backgroundColor: "#1890ff",
         padding: "9rem 1.5rem",
+        paddingBottom: "11rem",
         textAlign: "center",
       }}
     >
       <H1>Hello! I'm Nam. Nice to meet you.</H1>
       <H2>
-        orem Ipsum is simply dummy text of the printing and typesetting
+        I'm currently a senior software engineering student at the Amsterdam 
+        University of Applied Sciences. 
         industry. Lorem Ipsum has been the industry's standard dummy text ever
         since the 1500s, when an unknown printer took a galley of type and
         scrambled it to make a type specimen book. It has survived not only five
