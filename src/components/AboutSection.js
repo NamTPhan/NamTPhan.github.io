@@ -27,11 +27,12 @@ const AboutSection = () => (
       <H1>Hello! I'm Nam. Nice to meet you.</H1>
       <H2>
         I'm currently a senior software engineering student at the Amsterdam 
-        University of Applied Sciences. 
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since the 1500s, when an unknown printer took a galley of type and
-        scrambled it to make a type specimen book. It has survived not only five
-        centuries, but also the leap into electron
+        University of Applied Sciences. I got interested in software engineering 
+        because of the impact of software in our daily lives and the cool things 
+        that you could build. Currently I am more of a Front-End developer, 
+        but long-term I intend to move towards becoming a Full Stack developer. I
+        also enjoy experimenting with new technologies and meeting new people from all
+        over the world. 
       </H2>
     </Col>
   </Row>

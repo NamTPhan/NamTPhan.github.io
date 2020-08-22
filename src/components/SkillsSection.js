@@ -19,6 +19,11 @@ const CardTitle = styled.h1`
   font-size: 1.2rem;
 `;
 
+const CardSubText = styled.b`
+  font-size: 1rem;
+  color: #1890ff;
+`
+
 const Icon = styled.p`
   font-size: 48px;
   margin-bottom: 20px;
@@ -31,7 +36,7 @@ const CardBlock = (props) => {
         <Icon>{props.icon}</Icon>
         <CardTitle>{props.title}</CardTitle>
         <p>{props.description}</p>
-        <p>{props.subtext}</p>
+        <CardSubText>Tools that I use:</CardSubText>
       </Card>
     </Col>
   );
