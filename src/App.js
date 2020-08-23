@@ -5,7 +5,6 @@ import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 
 import "antd/dist/antd.css";
-import "./App.scss";
 
 function App() {
   return (
