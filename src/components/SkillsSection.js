@@ -9,7 +9,7 @@ const styles = {
     marginLeft: "10px",
     marginRight: "10px",
     marginBottom: "20px",
-    borderRadius: "15px",
+    borderRadius: "15px"
   },
 };
 
@@ -26,7 +26,7 @@ const CardSubText = styled.b`
 
 const CardDescription = styled.p`
   font-weight: 500;
-  font-size: 14px;
+  font-size: 15px;
 `;
 
 const Icon = styled.p`
@@ -42,7 +42,7 @@ const CardBlock = (props) => {
         <CardTitle>{props.title}</CardTitle>
         <CardDescription>{props.description}</CardDescription>
         <CardSubText>Tools that I use:</CardSubText>
-        <p>{props.tools}</p>
+        <CardDescription>{props.tools}</CardDescription>
       </Card>
     </Col>
   );
@@ -53,22 +53,22 @@ const SkillsSection = () => (
     style={{ paddingLeft: "20px", paddingRight: "20px", marginTop: "-80px" }}
   >
     <CardBlock
-      icon={<EditTwoTone />}
-      title="Design"
-      description="I like to keep the design simple and clean. I mostly use the material design system."
-      tools=""
-    />
-    <CardBlock
       icon={<LayoutTwoTone twoToneColor="#eb2f96" />}
       title="Web Development"
       description="I like to code web apps from scratch by using awesome libraries and frameworks."
-      tools=""
+      tools="JavaScript, TypeScript, Angular, HTML5, (S)CSS, styled-components, React, lodash, redux, VSCode, Python"
     />
     <CardBlock
       icon={<MobileTwoTone twoToneColor="#52c41a" />}
       title="Mobile Development"
       description="I also like to create mobile apps that could help people in their daily lives or for entertainment."
-      tools=""
+      tools="Java, React Native, Ionic, VSCode, Android Studio, Kotlin (Currently learning), Flutter (Currently learning)"
+    />
+    <CardBlock
+      icon={<EditTwoTone />}
+      title="Design & Other tools"
+      description="I like to keep the design simple and clean. I mostly use the material design system."
+      tools="Balsamiq, Marvel, Photoshop, Pen & Paper, ui8.net, Git, Github, Gitlab, Terminal/CMD, Sourcetree/Gitkraken"
     />
   </Row>
 );

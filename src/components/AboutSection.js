@@ -33,7 +33,7 @@ const AboutSection = () => (
         organized team player. I also like to meet or work with people from all
         over the world to learn more about different cultures. In my spare time
         I like to work on my own projects or watching videos about new tech and
-        gadgets.
+        gadgets. See below the tools that I commonly use.
       </H2>
     </Col>
   </Row>
