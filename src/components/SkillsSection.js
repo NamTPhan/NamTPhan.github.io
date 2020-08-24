@@ -22,7 +22,12 @@ const CardTitle = styled.h1`
 const CardSubText = styled.b`
   font-size: 1rem;
   color: #1890ff;
-`
+`;
+
+const CardDescription = styled.p`
+  font-weight: 500;
+  font-size: 14px;
+`;
 
 const Icon = styled.p`
   font-size: 48px;
@@ -35,8 +40,9 @@ const CardBlock = (props) => {
       <Card style={styles.cardStyles}>
         <Icon>{props.icon}</Icon>
         <CardTitle>{props.title}</CardTitle>
-        <p>{props.description}</p>
+        <CardDescription>{props.description}</CardDescription>
         <CardSubText>Tools that I use:</CardSubText>
+        <p>{props.tools}</p>
       </Card>
     </Col>
   );
@@ -46,14 +52,23 @@ const SkillsSection = () => (
   <Row
     style={{ paddingLeft: "20px", paddingRight: "20px", marginTop: "-80px" }}
   >
-    <CardBlock icon={<EditTwoTone />} title="Design" />
+    <CardBlock
+      icon={<EditTwoTone />}
+      title="Design"
+      description="I like to keep the design simple and clean. I mostly use the material design system."
+      tools=""
+    />
     <CardBlock
       icon={<LayoutTwoTone twoToneColor="#eb2f96" />}
       title="Web Development"
+      description="I like to code web apps from scratch by using awesome libraries and frameworks."
+      tools=""
     />
     <CardBlock
       icon={<MobileTwoTone twoToneColor="#52c41a" />}
       title="Mobile Development"
+      description="I also like to create mobile apps that could help people in their daily lives or for entertainment."
+      tools=""
     />
   </Row>
 );
