@@ -1,0 +1,60 @@
+[
+  {
+    "id": "fof",
+    "title": "Front-End Developer",
+    "company": "Fish on Fire",
+    "country": "Netherlands",
+    "type": "Internship",
+    "date": "Sep 2019 - Jan 2020",
+    "website": "https://www.fishonfire.com",
+    "activities": [
+      "Using React/Next.js and styled-components to build a job vacancy website",
+      "Testing mobile apps and reporting the bugs",
+      "Fixing bugs in websites and mobile apps",
+      "Front-end and some back-end development"
+    ]
+  },
+  {
+    "id": "planit",
+    "title": "Software Engineer",
+    "company": "PLANit GLOBAL",
+    "country": "United-Kingdom",
+    "type": "Internship",
+    "date": "Nov 2016 - Apr 2017",
+    "website": "https://twitter.com/planitglobal",
+    "activities": [
+      "Building the new company website with Ruby/Ruby on Rails and Haml",
+      "Gaining more experience with: JavaScript, SASS, Bootstrap and Databases",
+      "Working with Scrum, using JIRA as a Scrum tool",
+      "Working in a international team"
+    ]
+  },
+  {
+    "id": "webreturn",
+    "title": "Webdesigner",
+    "company": "Webreturn",
+    "country": "Netherlands",
+    "type": "Internship",
+    "date": "Dec 2015 - Mar 2016",
+    "website": "https://www.webreturn.nl",
+    "activities": [
+      "Webdesign for WordPress websites & Magento webshops",
+      "General website maintenance",
+      "Testing and optimizing websites/webshops"
+    ]
+  },
+  {
+    "id": "falco",
+    "title": "Application Developer",
+    "company": "Falco Networks",
+    "country": "Netherlands",
+    "type": "Internship",
+    "date": "Jan 2015 - Mar 2015",
+    "website": "https://www.falco-networks.com",
+    "activities": [
+      "Gaining generel work experience",
+      "Learning PHP Laravel, Ubuntu and PostgreSQL",
+      "Gaining knowledge about networks in general"
+    ]
+  }
+]
