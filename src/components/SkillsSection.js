@@ -56,13 +56,13 @@ const SkillsSection = () => (
       icon={<LayoutTwoTone twoToneColor="#eb2f96" />}
       title="Web Development"
       description="I like to code web apps from scratch by using awesome libraries and frameworks."
-      tools="JavaScript, TypeScript, Angular, HTML5, (S)CSS, styled-components, React, lodash, redux, VSCode, Python"
+      tools="JavaScript, TypeScript, Angular, HTML5, (S)CSS, styled-components, React, lodash, redux, VS Code, Python"
     />
     <CardBlock
       icon={<MobileTwoTone twoToneColor="#52c41a" />}
       title="Mobile Development"
       description="I also like to create mobile apps that could help people in their daily lives or for entertainment."
-      tools="Java, React Native, Ionic, VSCode, Android Studio, Kotlin (Currently learning), Flutter (Currently learning)"
+      tools="Java, React Native, Ionic, VS Code, Android Studio, Kotlin (Currently learning), Flutter (Currently learning)"
     />
     <CardBlock
       icon={<EditTwoTone />}
