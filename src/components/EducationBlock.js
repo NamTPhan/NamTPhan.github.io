@@ -1,6 +1,10 @@
 import React from "react";
 import { Col } from "antd";
-import { CaretRightOutlined } from "@ant-design/icons";
+import {
+  CloseCircleTwoTone,
+  CheckCircleTwoTone,
+  LoadingOutlined,
+} from "@ant-design/icons";
 import styled from "styled-components";
 
 const Span = styled.span`
@@ -10,7 +14,7 @@ const Span = styled.span`
 `;
 
 const P = styled.p`
-  font-size: ${(props) => props.fontSize};
+  font-size: 14px;
   font-weight: 500;
   color: #0055a5;
   margin: 0;
@@ -32,10 +36,27 @@ const EducationBlock = (props) => (
         src={require("../assets/flags/" + props.country + ".png")}
         width="22"
         height="16"
+        alt="country"
       />
     </Span>
-    <P fontSize="14px">{props.school}</P>
-    <P fontSize="14px">{props.date}</P>
+    <P>{props.school}</P>
+    <P>{props.date}</P>
+    <P>
+      Completed:{" "}
+      {props.completed === 1 ? (
+        <CheckCircleTwoTone
+          style={{ fontSize: "16px" }}
+          twoToneColor="#52c41a"
+        />
+      ) : props.completed === 2 ? (
+        <CloseCircleTwoTone
+          style={{ fontSize: "16px" }}
+          twoToneColor="#eb2f96"
+        />
+      ) : (
+        <LoadingOutlined style={{ fontSize: "16px" }} spin />
+      )}
+    </P>
   </Col>
 );
 

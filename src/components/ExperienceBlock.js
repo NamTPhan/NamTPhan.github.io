@@ -36,12 +36,13 @@ const ExperienceBlock = (props) => (
   >
     <Span>
       {props.title}{" "}
-      <a href={props.website} target="_blank" style={{ color: "#1890ff" }}>
+      <a href={props.website} target="_blank" rel="noopener noreferrer" style={{ color: "#1890ff" }}>
         @ {props.company}{" "}
         <img
           src={require("../assets/flags/" + props.country + ".png")}
           width="22"
           height="16"
+          alt="country"
         />
       </a>
     </Span>
