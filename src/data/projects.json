@@ -3,9 +3,8 @@
     "id": "countrybucketlist",
     "name": "Country Bucket List",
     "description": "Country Bucket List, an easy way to manage multiple bucket lists. Instead of one big bucket lists you create several bucket lists for each country you visit or are planning to visit.",
-    "featureImage": "",
+    "image": "countrybucketlist",
     "tags": ["JavaScript", "React Native", "Redux", "NativeBase", "Expo"],
-    "images": [],
     "type": "Personal project",
     "android": "https://play.google.com/store/apps/details?id=com.npdevelopment.countrybucketlist",
     "website": ""
@@ -14,9 +13,8 @@
     "id": "mystudyprogress",
     "name": "My Study Progress",
     "description": "My Study Progress app allows you to add unlimited subjects/grades to your personal list. This app gives you a simple overview of the credits you have earned and the credits you still have to earn.",
-    "featureImage": "",
+    "image": "mystudyprogress",
     "tags": ["TypeScript", "Ionic", "Chart.js"],
-    "images": [],
     "type": "Personal project",
     "android": "https://play.google.com/store/apps/details?id=com.npdevelopment.mystudyprogress",
     "website": ""
@@ -25,9 +23,8 @@
     "id": "easyworx",
     "name": "Easyworx",
     "description": "A job vacancy website where job seekers can find jobs based on their search preferences. I contributed to various features like generic components, forms, Google-for-Jobs and other front-end functionalities.",
-    "featureImage": "",
+    "image": "easyworx",
     "tags": ["Next.js", "Redux", "styled-components", "Formik"],
-    "images": [],
     "type": "Internship project",
     "android": "",
     "website": "http://vacatures.easyworx.nl"
