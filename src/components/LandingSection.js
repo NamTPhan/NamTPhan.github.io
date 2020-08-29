@@ -39,15 +39,11 @@ const Setup = styled.img`
   display: flex;
 `;
 
-const B = styled.b`
-  color: #1890ff;
-`;
-
 const LandingSection = () => (
   <Row>
     <Col span={24}>
       <H1>
-        Hi, my name is <B>Nam Phan</B>
+        Hi, my name is <b style={{ color: "#1890ff" }}>Nam Phan</b>
       </H1>
       <H2>
         I'm a Software Engineer and I build things for the web and mobile, and I
