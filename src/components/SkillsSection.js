@@ -3,15 +3,13 @@ import { Row, Col, Card } from "antd";
 import { EditTwoTone, LayoutTwoTone, MobileTwoTone } from "@ant-design/icons";
 import styled from "styled-components";
 
-const styles = {
-  cardStyles: {
-    boxShadow: "0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
-    marginLeft: "10px",
-    marginRight: "10px",
-    marginBottom: "20px",
-    borderRadius: "15px"
-  },
-};
+const StyledCard = styled(Card)`
+  box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+`
 
 const CardTitle = styled.h1`
   color: "#141c3a";
@@ -37,13 +35,13 @@ const Icon = styled.p`
 const CardBlock = (props) => {
   return (
     <Col xs={24} sm={24} md={8} lg={8} xl={8} style={{ textAlign: "center" }}>
-      <Card style={styles.cardStyles}>
+      <StyledCard>
         <Icon>{props.icon}</Icon>
         <CardTitle>{props.title}</CardTitle>
         <CardDescription>{props.description}</CardDescription>
         <CardSubText>Tools that I use:</CardSubText>
         <CardDescription>{props.tools}</CardDescription>
-      </Card>
+      </StyledCard>
     </Col>
   );
 };

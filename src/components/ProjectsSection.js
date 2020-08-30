@@ -1,17 +1,20 @@
 import React from "react";
-import { Row, Col, Badge, Card, Collapse } from "antd";
+import { Row, Col, Badge, Card, Collapse, Tag, Tooltip } from "antd";
+import { AndroidFilled, LinkOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 
 import ProjectsData from "../data/projects.json";
 
-const styles = {
-  cardStyles: {
-    boxShadow: "0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
-    borderRadius: "15px",
-  },
-};
-
 const { Panel } = Collapse;
+
+const StyledCard = styled(Card)`
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 15px;
+
+  .ant-card-body {
+    padding: 0px !important;
+  }
+`;
 
 const H1 = styled.h1`
   font-size: 2rem;
@@ -30,6 +33,11 @@ const H3 = styled.h3`
 const FeatureImage = styled.img`
   width: 100%;
   max-height: 300px;
+  border-radius: 15px 15px 0px 0px;
+`;
+
+const LinksP = styled.p`
+  text-align: center;
 `;
 
 const ProjectsSection = () => (
@@ -49,24 +57,58 @@ const ProjectsSection = () => (
             xl={8}
             style={{ padding: "10px 20px" }}
           >
-            <Badge.Ribbon text={project.name}>
-              <Card style={styles.cardStyles}>
+            <Badge.Ribbon color="#52c41a" text={project.name}>
+              <StyledCard>
                 <FeatureImage
                   src={require("../assets/projects/" + project.image + ".png")}
                   alt="feature"
                 />
                 <Collapse ghost>
-                  <Panel header="This is panel header 1" key="1">
-                    <p>test</p>
+                  <Panel header="Information" key="1">
+                    <b>{project.type}</b>
+                    <p style={{ fontWeight: 500 }}>{project.description}</p>
+                    <p>
+                      {project.tags.map((tag, index) => (
+                        <Tag
+                          key={"tag" + index}
+                          color="#52c41a"
+                          style={{ marginBottom: "3px" }}
+                        >
+                          {tag}
+                        </Tag>
+                      ))}
+                    </p>
                   </Panel>
-                  <Panel header="This is panel header 2" key="2">
-                    <p>test2</p>
-                  </Panel>
-                  <Panel header="This is panel header 3" key="3">
-                    <p>test3</p>
+                  <Panel header="Links" key="2">
+                    <LinksP>
+                      {project.android && (
+                        <a
+                          href={project.android}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Tooltip title="View Online" color="blue">
+                            <AndroidFilled
+                              style={{ fontSize: "26px", color: "#52c41a" }}
+                            />
+                          </Tooltip>
+                        </a>
+                      )}
+                      {project.website && (
+                        <a
+                          href={project.website}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                        >
+                          <Tooltip title="View Online" color="blue">
+                            <LinkOutlined style={{ fontSize: "26px" }} />
+                          </Tooltip>
+                        </a>
+                      )}
+                    </LinksP>
                   </Panel>
                 </Collapse>
-              </Card>
+              </StyledCard>
             </Badge.Ribbon>
           </Col>
         ))}
