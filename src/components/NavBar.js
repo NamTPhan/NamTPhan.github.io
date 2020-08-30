@@ -2,13 +2,13 @@ import React from "react";
 import { Row, Col, Button, Tooltip } from "antd";
 import { FileDoneOutlined } from "@ant-design/icons";
 
-import logo from "../assets/logo.png";
+import Logo from "../assets/logo.png";
 
 const NavBar = () => (
   <Row style={{ padding: "1.5rem" }}>
     <Col span={12}>
       <img
-        src={logo}
+        src={Logo}
         width="50"
         height="50"
         alt="logo"
