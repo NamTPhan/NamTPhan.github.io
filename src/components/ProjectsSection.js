@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Badge, Card, Collapse, Tag, Tooltip } from "antd";
+import { Row, Col, Card, Collapse, Tag, Tooltip } from "antd";
 import { AndroidFilled, LinkOutlined } from "@ant-design/icons";
 import styled from "styled-components";
 
@@ -57,59 +57,55 @@ const ProjectsSection = () => (
             xl={8}
             style={{ padding: "10px 20px" }}
           >
-            <Badge.Ribbon color="#52c41a" text={project.name}>
-              <StyledCard>
-                <FeatureImage
-                  src={require("../assets/projects/" + project.image + ".png")}
-                  alt="feature"
-                />
-                <Collapse ghost>
-                  <Panel header="Information" key="1">
-                    <b>{project.type}</b>
-                    <p style={{ fontWeight: 500 }}>{project.description}</p>
-                    <p>
-                      {project.tags.map((tag, index) => (
-                        <Tag
-                          key={"tag" + index}
-                          color="#52c41a"
-                          style={{ marginBottom: "3px" }}
-                        >
-                          {tag}
-                        </Tag>
-                      ))}
-                    </p>
-                  </Panel>
-                  <Panel header="Links" key="2">
-                    <LinksP>
-                      {project.android && (
-                        <a
-                          href={project.android}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <Tooltip title="View Online" color="blue">
-                            <AndroidFilled
-                              style={{ fontSize: "26px", color: "#52c41a" }}
-                            />
-                          </Tooltip>
-                        </a>
-                      )}
-                      {project.website && (
-                        <a
-                          href={project.website}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          <Tooltip title="View Online" color="blue">
-                            <LinkOutlined style={{ fontSize: "26px" }} />
-                          </Tooltip>
-                        </a>
-                      )}
-                    </LinksP>
-                  </Panel>
-                </Collapse>
-              </StyledCard>
-            </Badge.Ribbon>
+            <StyledCard>
+              <FeatureImage
+                src={require("../assets/projects/" + project.image + ".png")}
+                alt="feature"
+              />
+              <Collapse ghost>
+                <Panel header={project.name} key="1">
+                  <b>{project.type}</b>
+                  <p style={{ fontWeight: 500 }}>{project.description}</p>
+                  <p>
+                    {project.tags.map((tag, index) => (
+                      <Tag
+                        key={"tag" + index}
+                        color="#52c41a"
+                        style={{ marginBottom: "3px" }}
+                      >
+                        {tag}
+                      </Tag>
+                    ))}
+                  </p>
+                  <LinksP>
+                    {project.android && (
+                      <a
+                        href={project.android}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Tooltip title="View Online" color="blue">
+                          <AndroidFilled
+                            style={{ fontSize: "26px", color: "#52c41a" }}
+                          />
+                        </Tooltip>
+                      </a>
+                    )}
+                    {project.website && (
+                      <a
+                        href={project.website}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Tooltip title="View Online" color="blue">
+                          <LinkOutlined style={{ fontSize: "26px" }} />
+                        </Tooltip>
+                      </a>
+                    )}
+                  </LinksP>
+                </Panel>
+              </Collapse>
+            </StyledCard>
           </Col>
         ))}
       </Row>
