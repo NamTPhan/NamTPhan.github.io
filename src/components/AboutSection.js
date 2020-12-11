@@ -1,6 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
-import styled from "styled-components";
+import styled, { withTheme } from "styled-components";
 
 const H1 = styled.h1`
   color: #fff;
@@ -13,12 +13,12 @@ const H2 = styled.h2`
   font-size: 1.2rem;
 `;
 
-const AboutSection = () => (
+const AboutSection = (props) => (
   <Row>
     <Col
       span={24}
       style={{
-        backgroundColor: "#1890ff",
+        backgroundColor: props.theme.primaryBlue,
         padding: "9rem 1.5rem",
         paddingBottom: "11rem",
         textAlign: "center",
@@ -39,4 +39,4 @@ const AboutSection = () => (
   </Row>
 );
 
-export default AboutSection;
+export default withTheme(AboutSection);

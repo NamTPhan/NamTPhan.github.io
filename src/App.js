@@ -1,7 +1,7 @@
 import React, { useState, } from "react";
-import { ThemeProvider } from "styled-components";
+import { Switch, Row, Col } from "antd";
+import styled, { ThemeProvider } from "styled-components";
 
-import NavBar from "./components/NavBar";
 import LandingSection from "./components/LandingSection";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
@@ -15,7 +15,7 @@ import { lightTheme, darkTheme } from "./components/Themes"
 import "antd/dist/antd.css";
 
 const App = () => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   const themeToggler = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light')
@@ -24,14 +24,19 @@ const App = () => {
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
-        <button onClick={themeToggler}>Switch Theme</button>
-        <NavBar />
-        <LandingSection />
-        <AboutSection />
-        <SkillsSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <ContactSection />
+
+      <Row>
+        <Col style={{ textAlign: 'center' }} span={24}>
+          <Switch style={{ marginTop: 20 }} defaultChecked onChange={themeToggler} />
+        </Col>
+      </Row>
+
+      <LandingSection />
+      <AboutSection />
+      <SkillsSection />
+      <ExperienceSection />
+      <ProjectsSection />
+      <ContactSection />
     </ThemeProvider>
   );
 }

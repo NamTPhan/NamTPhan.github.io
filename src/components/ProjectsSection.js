@@ -19,14 +19,14 @@ const StyledCard = styled(Card)`
 const H1 = styled.h1`
   font-size: 2rem;
   font-weight: 800;
-  color: #141c3a;
+  color: ${({ theme }) => theme.titleText};
   text-align: center;
 `;
 
 const H3 = styled.h3`
   font-size: 1rem;
   font-weight: 700;
-  color: #141c3a;
+  color: ${({ theme }) => theme.titleText};
   text-align: center;
 `;
 

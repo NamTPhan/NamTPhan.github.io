@@ -6,7 +6,7 @@ import {
   AndroidOutlined,
   GithubOutlined,
 } from "@ant-design/icons";
-import styled from "styled-components";
+import styled, { withTheme } from "styled-components";
 
 import Logo from "../assets/logo.png";
 
@@ -48,7 +48,7 @@ const P = styled.p`
   font-size: 14px;
 `;
 
-const ContactSection = () => (
+const ContactSection = (props) => (
   <Row>
     <Col xs={0} sm={0} md={2} lg={2} xl={2} />
     <Col xs={24} sm={24} md={20} lg={20} xl={20}>
@@ -61,7 +61,7 @@ const ContactSection = () => (
     <Col
       span={24}
       style={{
-        backgroundColor: "#1890ff",
+        backgroundColor: props.theme.primaryBlue,
         padding: "9rem 5rem 3rem 5rem",
         textAlign: "center",
       }}
@@ -112,4 +112,4 @@ const ContactSection = () => (
   </Row>
 );
 
-export default ContactSection;
+export default withTheme(ContactSection);

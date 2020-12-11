@@ -1,25 +1,25 @@
 import React from "react";
 import { Col } from "antd";
 import { CaretRightOutlined } from "@ant-design/icons";
-import styled from "styled-components";
+import styled, { withTheme } from "styled-components";
 
 const Span = styled.span`
   font-size: 15px;
   font-weight: 700;
-  color: #141c3a;
+  color: ${({ theme }) => theme.titleText};
 `;
 
 const P = styled.p`
   font-size: ${(props) => props.fontSize};
   font-weight: 500;
-  color: #0055a5;
+  color: ${({ theme }) => theme.titleText};
   margin: 0;
 `;
 
 const UL = styled.ul`
   font-size: 13px;
   font-weight: 400;
-  color: #0055a5;
+  color: ${({ theme }) => theme.titleText};
   list-style: none;
   padding: 0;
 `;
@@ -36,7 +36,7 @@ const ExperienceBlock = (props) => (
   >
     <Span>
       {props.title}{" "}
-      <a href={props.website} target="_blank" rel="noopener noreferrer" style={{ color: "#1890ff" }}>
+      <a href={props.website} target="_blank" rel="noopener noreferrer" style={{ color: props.theme.primaryBlue }}>
         @ {props.company}{" "}
         <img
           src={require("../assets/flags/" + props.country + ".png")}
@@ -58,4 +58,4 @@ const ExperienceBlock = (props) => (
   </Col>
 );
 
-export default ExperienceBlock;
+export default withTheme(ExperienceBlock);
