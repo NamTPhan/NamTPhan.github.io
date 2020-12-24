@@ -1,13 +1,13 @@
 import React, { useState, } from "react";
 import { Switch, Row, Col } from "antd";
-import styled, { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components";
 
 import LandingSection from "./components/LandingSection";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
-import ContactSection from "./components/ContactSection";
+import Footer from "./components/Footer";
 
 import { GlobalStyles } from "./components/GlobalStyle";
 import { lightTheme, darkTheme } from "./components/Themes"
@@ -22,12 +22,17 @@ const App = () => {
   }
 
   return (
-    <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
+    <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
       <GlobalStyles />
 
       <Row>
         <Col style={{ textAlign: 'center' }} span={24}>
-          <Switch style={{ marginTop: 20 }} defaultChecked onChange={themeToggler} />
+          <Switch 
+          style={{ marginTop: 20 }} 
+          checkedChildren="Dark"
+          unCheckedChildren="Light" 
+          defaultChecked
+          onChange={themeToggler} />
         </Col>
       </Row>
 
@@ -36,7 +41,7 @@ const App = () => {
       <SkillsSection />
       <ExperienceSection />
       <ProjectsSection />
-      <ContactSection />
+      <Footer />
     </ThemeProvider>
   );
 }

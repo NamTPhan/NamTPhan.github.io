@@ -17,7 +17,7 @@ const ExperienceSection = () => (
     <Col xs={0} sm={0} md={2} lg={2} xl={2} />
     <Col xs={24} sm={24} md={20} lg={20} xl={20}>
       <H1>Where I’ve Worked</H1>
-      <Row style={{ textAlign: 'center' }} type="flex">
+      <Row type="flex">
         {ExperienceData.map((Exp, index) => (
           <ExperienceBlock
             key={"Exp" + index}

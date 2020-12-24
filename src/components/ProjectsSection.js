@@ -58,19 +58,17 @@ const ProjectsSection = () => (
             style={{ padding: "10px 20px" }}
           >
             <StyledCard>
-              <FeatureImage
+              {/* <FeatureImage
                 src={require("../assets/projects/" + project.image + ".png")}
                 alt="feature"
-              />
-              <Collapse ghost>
-                <Panel header={project.name} key="1">
+              /> */}
                   <b>{project.type}</b>
                   <p style={{ fontWeight: 500 }}>{project.description}</p>
                   <p>
                     {project.tags.map((tag, index) => (
                       <Tag
                         key={"tag" + index}
-                        color="#52c41a"
+                        color="#1890ff"
                         style={{ marginBottom: "3px" }}
                       >
                         {tag}
@@ -86,7 +84,7 @@ const ProjectsSection = () => (
                       >
                         <Tooltip title="View Online" color="blue">
                           <AndroidFilled
-                            style={{ fontSize: "26px", color: "#52c41a" }}
+                            style={{ fontSize: "26px", color: "#1890ff" }}
                           />
                         </Tooltip>
                       </a>
@@ -103,8 +101,6 @@ const ProjectsSection = () => (
                       </a>
                     )}
                   </LinksP>
-                </Panel>
-              </Collapse>
             </StyledCard>
           </Col>
         ))}

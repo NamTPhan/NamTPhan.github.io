@@ -1,38 +1,35 @@
 import React from "react";
 import { Row, Col } from "antd";
+import {
+  MailOutlined,
+  LinkedinOutlined,
+  AndroidOutlined,
+  GithubOutlined,
+} from "@ant-design/icons";
 import styled, { withTheme } from "styled-components";
 
-import Me from "../assets/avatar.svg";
-import Laptop from "../assets/setup.png";
+import AppDev from "../assets/app_dev.svg";
+import Logo from "../assets/logo.png";
 
 const H1 = styled.h1`
   font-size: 3rem;
   font-weight: 800;
   color: ${({ theme }) => theme.titleText};
-  text-align: center;
-  margin-top: 45px;
+  margin-left: 110px;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
 `;
 
 const H2 = styled.h2`
   font-size: 1.5rem;
   font-weight: 400;
   color: ${({ theme }) => theme.titleText};
-  text-align: center;
+  margin-left: 110px;
 `;
 
-const Avatar = styled.img`
-  width: 200px;
-  height: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  display: flex;
-  border-radius: 50%;
-`;
-
-const Setup = styled.img`
-  width: 90%;
+const Illustration = styled.img`
+  width: 65%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -44,20 +41,46 @@ const B = styled.b`
 `;
 
 const LandingSection = (props) => (
-  <Row>
-    <Col span={24}>
+  <Row style={{ marginTop: 50, height: '100vh' }}>
+    <Col span={12}>
       <H1>
         Hi, my name is <B>Nam Phan</B>
       </H1>
       <H2>
-        I'm a Software Engineer and I build things for the web and mobile, and I
-        love what I do.
+        I'm a Software Engineer and I build things for the web and mobile,
+        <br /> and I love what I do.
       </H2>
       <br />
-      <Avatar style={{ backgroundColor: props.theme.primaryBlue }} src={Me} alt="avatar" />
+      {/* <MeLogo src={Logo} alt="logo" /> */}
+      {/* <p>
+        <A href="mailto:namtphann@gmail.com">
+          <MailOutlined />
+        </A>
+        <A
+          href="https://www.linkedin.com/in/namtphan2"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <LinkedinOutlined />
+        </A>
+        <A
+          href="https://play.google.com/store/apps/developer?id=NPDevelopment+Apps"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <AndroidOutlined />
+        </A>
+        <A
+          href="https://github.com/NamTPhan"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <GithubOutlined />
+        </A>
+      </p> */}
     </Col>
-    <Col offset={5} span={14}>
-      <Setup src={Laptop} alt="laptop" />
+    <Col span={12}>
+      <Illustration src={AppDev} />
     </Col>
   </Row>
 );
