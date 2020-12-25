@@ -43,54 +43,42 @@ const ExperienceBlock = (props) => (
     style={{ padding: "20px" }}
   >
     <Row>
-    <Col 
-      xs={24}
-      sm={24}
-      md={12}
-      lg={12}
-      xl={12}
-    >
-    <Span>
-      {props.title}{" "}
-      <a
-        href={props.website}
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{ color: Colors.White }}
-      >
-        @ {props.company}{" "}
-        <img
-          src={require("../assets/flags/" + props.country + ".png")}
-          width="22"
-          height="16"
-          alt="country"
-        />
-      </a>
-    </Span>
-    <P fontSize="14px">{props.date}</P>
-    <P fontSize="13px">{props.type}</P>
-    <br />
-    <UL>
-      {props.activities.map((act, index) => (
-        <li key={"nr" + index}>
-          <CaretRightOutlined /> {act}
-        </li>
-      ))}
-    </UL>
-    </Col>
-    <Col 
-      xs={24}
-      sm={24}
-      md={12}
-      lg={12}
-      xl={12}
-    >
-       <CompanyLogo
+      <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+        <Span>
+          {props.title}{" "}
+          <a
+            href={props.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ color: Colors.White }}
+          >
+            @ {props.company}{" "}
+            <img
+              src={require("../assets/flags/" + props.country + ".png")}
+              width="22"
+              height="16"
+              alt="country"
+            />
+          </a>
+        </Span>
+        <P fontSize="14px">{props.date}</P>
+        <P fontSize="13px">{props.type}</P>
+        <br />
+        <UL>
+          {props.activities.map((act, index) => (
+            <li key={"nr" + index}>
+              <CaretRightOutlined /> {act}
+            </li>
+          ))}
+        </UL>
+      </Col>
+      <Col xs={24} sm={24} md={12} lg={12} xl={12} >
+        <CompanyLogo
           src={require("../assets/company/" + props.company + ".png")}
           alt="company"
         />
       </Col>
-      </Row>
+    </Row>
   </Col>
 );
 

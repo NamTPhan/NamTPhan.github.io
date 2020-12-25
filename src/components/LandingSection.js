@@ -73,29 +73,34 @@ const LandingSection = (props) => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button type="primary" shape="circle" icon={<AndroidOutlined />} size={'large'} />
+          <Button
+            style={{ backgroundColor: Colors.Green, color: Colors.White, borderColor: Colors.Green }}
+            shape="circle"
+            icon={<AndroidOutlined />}
+            size={'large'}
+          />
         </A>
-        <Button
-          style={{
-            marginLeft: 8,
-            marginRight: 8
-          }}
-          type="primary"
-          shape="circle"
-          icon={<MailOutlined />}
-          size={'large'}
-        />
         <A
           href="https://github.com/NamTPhan"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button type="primary" shape="circle" icon={<GithubOutlined />} size={'large'} />
+          <Button
+            style={{ backgroundColor: Colors.Black, color: Colors.White }}
+            shape="circle"
+            icon={<GithubOutlined />}
+            size={'large'}
+          />
         </A>
         <A
           href="mailto:namtphann@gmail.com"
         >
-          <Button type="primary" shape="circle" icon={<MailOutlined />} size={'large'} />
+          <Button
+            style={{ backgroundColor: Colors.Red, color: Colors.White, borderColor: Colors.Red }}
+            shape="circle"
+            icon={<MailOutlined />}
+            size={'large'}
+          />
         </A>
       </Col>
     </Col>

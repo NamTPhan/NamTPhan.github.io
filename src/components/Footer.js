@@ -4,13 +4,6 @@ import { Row, Col } from "antd";
 import styled, { withTheme } from "styled-components";
 import * as Colors from "../styles/Colors";
 
-const MeLogo = styled.img`
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-bottom: 20px;
-`;
-
 const P = styled.p`
   color: ${Colors.White};
   font-size: 14px;
