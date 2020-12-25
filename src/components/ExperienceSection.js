@@ -34,7 +34,7 @@ const ExperienceSection = (props) => (
         lg={{ span: 12, offset: 6 }}
         xl={{ span: 12, offset: 6 }}
       >
-        <Tabs defaultActiveKey="1" type="card" size={'large'} centered>
+        <Tabs defaultActiveKey="0" type="card" size={'large'} centered>
           {ExperienceData.map((Exp, index) => (
             <TabPane tab={Exp.company} key={index}>
               <ExperienceBlock

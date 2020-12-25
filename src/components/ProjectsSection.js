@@ -1,18 +1,17 @@
 import React from "react";
-import { Row, Col, Card, Collapse, Tag, Tooltip } from "antd";
+import { Row, Col, Card, Tag } from "antd";
 import { AndroidFilled, LinkOutlined } from "@ant-design/icons";
-import styled from "styled-components";
 
 import ProjectsData from "../data/projects.json";
 
-const { Panel } = Collapse;
+import styled from "styled-components";
+import * as Colors from "../styles/Colors";
 
 const StyledCard = styled(Card)`
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  border-radius: 15px;
 
   .ant-card-body {
-    padding: 0px !important;
+    padding: 20px !important;
   }
 `;
 
@@ -33,7 +32,7 @@ const H3 = styled.h3`
 const FeatureImage = styled.img`
   width: 100%;
   max-height: 300px;
-  border-radius: 15px 15px 0px 0px;
+  margin-bottom: 20px;
 `;
 
 const LinksP = styled.p`
@@ -58,49 +57,45 @@ const ProjectsSection = () => (
             style={{ padding: "10px 20px" }}
           >
             <StyledCard>
-              {/* <FeatureImage
+              <FeatureImage
                 src={require("../assets/projects/" + project.image + ".png")}
                 alt="feature"
-              /> */}
-                  <b>{project.type}</b>
-                  <p style={{ fontWeight: 500 }}>{project.description}</p>
-                  <p>
-                    {project.tags.map((tag, index) => (
-                      <Tag
-                        key={"tag" + index}
-                        color="#1890ff"
-                        style={{ marginBottom: "3px" }}
-                      >
-                        {tag}
-                      </Tag>
-                    ))}
-                  </p>
-                  <LinksP>
-                    {project.android && (
-                      <a
-                        href={project.android}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Tooltip title="View Online" color="blue">
-                          <AndroidFilled
-                            style={{ fontSize: "26px", color: "#1890ff" }}
-                          />
-                        </Tooltip>
-                      </a>
-                    )}
-                    {project.website && (
-                      <a
-                        href={project.website}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Tooltip title="View Online" color="blue">
-                          <LinkOutlined style={{ fontSize: "26px" }} />
-                        </Tooltip>
-                      </a>
-                    )}
-                  </LinksP>
+              />
+              <b>{project.type}</b>
+              <p style={{ fontWeight: 500 }}>{project.description}</p>
+              <p>
+                {project.tags.map((tag, index) => (
+                  <Tag
+                    key={"tag" + index}
+                    color={Colors.Green}
+                    style={{ marginBottom: "3px" }}
+                  >
+                    {tag}
+                  </Tag>
+                ))}
+              </p>
+              <LinksP>
+                {project.android && (
+                  <a
+                    href={project.android}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <AndroidFilled
+                      style={{ fontSize: "26px", color: Colors.Blue }}
+                    />
+                  </a>
+                )}
+                {project.website && (
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <LinkOutlined style={{ fontSize: "26px" }} />
+                  </a>
+                )}
+              </LinksP>
             </StyledCard>
           </Col>
         ))}

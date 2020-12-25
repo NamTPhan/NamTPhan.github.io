@@ -2,7 +2,7 @@
   {
     "id": "countrybucketlist",
     "name": "Country Bucket List",
-    "description": "Country Bucket List, is an easy way to manage multiple bucket lists. Instead of one big bucket lists you create several bucket lists for each country you visit or are planning to visit.",
+    "description": "Country Bucket List, is an easy way to manage multiple bucket lists. Instead of one big bucket list you create several separated bucket lists for each country you visit or are planning to visit. ",
     "image": "countrybucketlist",
     "tags": ["JavaScript", "React Native", "Redux", "NativeBase", "Expo"],
     "type": "Personal project",
