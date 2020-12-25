@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 
 import styled, { withTheme } from "styled-components";
+import * as Colors from "../styles/Colors";
 
 const MeLogo = styled.img`
   width: 100px;
@@ -11,7 +12,7 @@ const MeLogo = styled.img`
 `;
 
 const P = styled.p`
-  color: #fff;
+  color: ${Colors.White};
   font-size: 14px;
 `;
 
@@ -35,7 +36,7 @@ const ContactSection = (props) => (
             href="https://ant.design/"
             target="_blank"
             rel="noopener noreferrer"
-            style={{ color: "#fff" }}
+            style={{ color: Colors.White }}
           >
             Ant Design
           </a>

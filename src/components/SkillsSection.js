@@ -1,7 +1,9 @@
 import React from "react";
 import { Row, Col, Card } from "antd";
 import { EditTwoTone, LayoutTwoTone, MobileTwoTone } from "@ant-design/icons";
+
 import styled from "styled-components";
+import * as Colors from "../styles/Colors";
 
 const StyledCard = styled(Card)`
   box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
@@ -12,14 +14,14 @@ const StyledCard = styled(Card)`
 `
 
 const CardTitle = styled.h1`
-  color: "#141c3a";
+  color: ${Colors.DarkBlue};
   font-weight: 800;
   font-size: 1.2rem;
 `;
 
 const CardSubText = styled.b`
   font-size: 1rem;
-  color: #1890ff;
+  color: ${Colors.Blue};
 `;
 
 const CardDescription = styled.p`
@@ -58,13 +60,13 @@ const SkillsSection = () => (
     <H1>Skills & Experience</H1>
     <Row style={{ paddingLeft: "20px", paddingRight: "20px" }}>
       <CardBlock
-        icon={<LayoutTwoTone twoToneColor="#eb2f96" />}
+        icon={<LayoutTwoTone twoToneColor={Colors.Pink} />}
         title="Web Development"
         description="I like to code web apps from scratch by using awesome libraries and frameworks."
         tools="JavaScript, TypeScript, Angular, (S)CSS, styled-components, React, lodash, redux, VS Code, Python"
       />
       <CardBlock
-        icon={<MobileTwoTone twoToneColor="#52c41a" />}
+        icon={<MobileTwoTone twoToneColor={Colors.Green} />}
         title="Mobile Development"
         description="I also like to create mobile apps that could help people in their daily lives or for entertainment."
         tools="Java, React Native, Ionic, VS Code, Android Studio, Kotlin (Currently learning), Flutter (Currently learning)"

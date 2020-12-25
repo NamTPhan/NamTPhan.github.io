@@ -1,15 +1,18 @@
 import React from "react";
 import { Row, Col } from "antd";
-import Me from "../assets/avatar.svg";
+
 import styled, { withTheme } from "styled-components";
+import * as Colors from "../styles/Colors";
+
+import Me from "../assets/avatar.svg";
 
 const H1 = styled.h1`
-  color: #fff;
+  color: ${Colors.White};
   font-weight: 800;
 `;
 
 const H2 = styled.h2`
-  color: #fff;
+  color: ${Colors.White};
   font-weight: 400;
   font-size: 1.2rem;
 `;
@@ -36,7 +39,7 @@ const AboutSection = (props) => (
     }}
   >
     <Col span={24}>
-      <Avatar style={{ backgroundColor: '#f4f4f4' }} src={Me} alt="avatar" />
+      <Avatar style={{ backgroundColor: Colors.WhiteSmoke }} src={Me} alt="avatar" />
     </Col>
     <Col span={24}>
       <H1>Hello! I'm Nam. Nice to meet you.</H1>
