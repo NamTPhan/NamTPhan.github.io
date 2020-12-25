@@ -1,28 +1,32 @@
 {
   "files": {
-    "main.js": "/static/js/main.d886a524.chunk.js",
-    "main.js.map": "/static/js/main.d886a524.chunk.js.map",
+    "main.js": "/static/js/main.629c1561.chunk.js",
+    "main.js.map": "/static/js/main.629c1561.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
     "static/css/2.027e9bb2.chunk.css": "/static/css/2.027e9bb2.chunk.css",
-    "static/js/2.bf4a553b.chunk.js": "/static/js/2.bf4a553b.chunk.js",
-    "static/js/2.bf4a553b.chunk.js.map": "/static/js/2.bf4a553b.chunk.js.map",
+    "static/js/2.47956a93.chunk.js": "/static/js/2.47956a93.chunk.js",
+    "static/js/2.47956a93.chunk.js.map": "/static/js/2.47956a93.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.1ba268aabfd85253994d661ef526d790.js": "/precache-manifest.1ba268aabfd85253994d661ef526d790.js",
+    "precache-manifest.bed0ead8d13f2e3b313db9afa21bca3b.js": "/precache-manifest.bed0ead8d13f2e3b313db9afa21bca3b.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.027e9bb2.chunk.css.map": "/static/css/2.027e9bb2.chunk.css.map",
-    "static/js/2.bf4a553b.chunk.js.LICENSE.txt": "/static/js/2.bf4a553b.chunk.js.LICENSE.txt",
+    "static/js/2.47956a93.chunk.js.LICENSE.txt": "/static/js/2.47956a93.chunk.js.LICENSE.txt",
+    "static/media/Falco Networks.png": "/static/media/Falco Networks.1ce97257.png",
+    "static/media/Fish on Fire.png": "/static/media/Fish on Fire.4578345f.png",
+    "static/media/PLANit GLOBAL.png": "/static/media/PLANit GLOBAL.3eadf2ef.png",
     "static/media/avatar.svg": "/static/media/avatar.2780977f.svg",
-    "static/media/countrybucketlist.png": "/static/media/countrybucketlist.6b007845.png",
+    "static/media/countrybucketlist.png": "/static/media/countrybucketlist.240d4a30.png",
     "static/media/easyworx.png": "/static/media/easyworx.f3a3bd03.png",
-    "static/media/logo.png": "/static/media/logo.9d5b2d22.png",
-    "static/media/mystudyprogress.png": "/static/media/mystudyprogress.6b197a7c.png",
-    "static/media/setup.png": "/static/media/setup.c8841cb2.png"
+    "static/media/laptop.svg": "/static/media/laptop.9e0aebbb.svg",
+    "static/media/moon.svg": "/static/media/moon.5039864c.svg",
+    "static/media/mystudyprogress.png": "/static/media/mystudyprogress.307beeba.png",
+    "static/media/sun.svg": "/static/media/sun.e1bb2cc7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
     "static/css/2.027e9bb2.chunk.css",
-    "static/js/2.bf4a553b.chunk.js",
-    "static/js/main.d886a524.chunk.js"
+    "static/js/2.47956a93.chunk.js",
+    "static/js/main.629c1561.chunk.js"
   ]
 }
