@@ -56,7 +56,7 @@ const CardBlock = (props) => {
 };
 
 const SkillsSection = () => (
-  <Col xs={24} sm={24} md={20} lg={24} xl={24} style={{ marginTop: "50px" }}>
+  <Col xs={24} sm={24} md={20} lg={24} xl={24} style={{ margin: '100px 0' }}>
     <H1>Skills & Experience</H1>
     <Row style={{ paddingLeft: "20px", paddingRight: "20px" }}>
       <CardBlock

@@ -1,5 +1,5 @@
 import React from "react";
-import { Col } from "antd";
+import { Col, Row } from "antd";
 import { CaretRightOutlined } from "@ant-design/icons";
 
 import styled, { withTheme } from "styled-components";
@@ -26,16 +26,30 @@ const UL = styled.ul`
   padding: 0;
 `;
 
+const CompanyLogo = styled.img`
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  display: flex;
+  background-color: ${Colors.White};
+  border-radius: 5%;
+`
+
 const ExperienceBlock = (props) => (
   <Col
     key={props.id}
-    xs={24}
-    sm={24}
-    md={12}
-    lg={12}
-    xl={12}
+    span={24}
     style={{ padding: "20px" }}
   >
+    <Row>
+    <Col 
+      xs={24}
+      sm={24}
+      md={12}
+      lg={12}
+      xl={12}
+    >
     <Span>
       {props.title}{" "}
       <a
@@ -63,6 +77,20 @@ const ExperienceBlock = (props) => (
         </li>
       ))}
     </UL>
+    </Col>
+    <Col 
+      xs={24}
+      sm={24}
+      md={12}
+      lg={12}
+      xl={12}
+    >
+       <CompanyLogo
+          src={require("../assets/company/" + props.company + ".png")}
+          alt="company"
+        />
+      </Col>
+      </Row>
   </Col>
 );
 
