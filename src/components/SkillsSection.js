@@ -1,6 +1,7 @@
 import React from "react";
 import { Row, Col, Card } from "antd";
 import { EditTwoTone, LayoutTwoTone, MobileTwoTone } from "@ant-design/icons";
+import { Slide } from 'react-reveal';
 
 import styled from "styled-components";
 import * as Colors from "../styles/Colors";
@@ -58,26 +59,29 @@ const CardBlock = (props) => {
 const SkillsSection = () => (
   <Col xs={24} sm={24} md={20} lg={24} xl={24} style={{ margin: '100px 0' }}>
     <H1>Skills & Experience</H1>
-    <Row style={{ paddingLeft: "20px", paddingRight: "20px" }}>
-      <CardBlock
-        icon={<LayoutTwoTone twoToneColor={Colors.Pink} />}
-        title="Web Development"
-        description="I like to code web apps from scratch by using awesome libraries and frameworks."
-        tools="JavaScript, TypeScript, Angular, (S)CSS, styled-components, React, lodash, redux, VS Code, Python"
-      />
-      <CardBlock
-        icon={<MobileTwoTone twoToneColor={Colors.Green} />}
-        title="Mobile Development"
-        description="I also like to create mobile apps that could help people in their daily lives or for entertainment."
-        tools="Java, React Native, Ionic, VS Code, Android Studio, Kotlin (Currently learning), Flutter (Currently learning)"
-      />
-      <CardBlock
-        icon={<EditTwoTone />}
-        title="Design & Other tools"
-        description="I like to keep the design simple and clean. I mostly use the material design system."
-        tools="Photoshop, Pen & Paper, ui8.net, Git, GitHub, GitLab, Terminal/CMD, Sourcetree/Gitkraken, Postman"
-      />
-    </Row>
+
+    <Slide top>
+      <Row style={{ paddingLeft: "20px", paddingRight: "20px" }}>
+        <CardBlock
+          icon={<LayoutTwoTone twoToneColor={Colors.Pink} />}
+          title="Web Development"
+          description="I like to code web apps from scratch by using awesome libraries and frameworks."
+          tools="JavaScript, TypeScript, Angular, (S)CSS, styled-components, React, lodash, redux, VS Code, Python"
+        />
+        <CardBlock
+          icon={<MobileTwoTone twoToneColor={Colors.Green} />}
+          title="Mobile Development"
+          description="I also like to create mobile apps that could help people in their daily lives or for entertainment."
+          tools="Java, React Native, Ionic, VS Code, Android Studio, Kotlin (Currently learning), Flutter (Currently learning)"
+        />
+        <CardBlock
+          icon={<EditTwoTone />}
+          title="Design & Other tools"
+          description="I like to keep the design simple and clean. I mostly use the material design system."
+          tools="Photoshop, Pen & Paper, ui8.net, Git, GitHub, GitLab, Terminal/CMD, Sourcetree/Gitkraken, Postman"
+        />
+      </Row>
+    </Slide>
   </Col>
 );
 

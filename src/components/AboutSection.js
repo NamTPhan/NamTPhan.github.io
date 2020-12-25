@@ -1,5 +1,6 @@
 import React from "react";
 import { Row, Col } from "antd";
+import { Flip } from 'react-reveal';
 
 import styled, { withTheme } from "styled-components";
 import * as Colors from "../styles/Colors";
@@ -39,7 +40,9 @@ const AboutSection = (props) => (
     }}
   >
     <Col span={24}>
+      <Flip>
       <Avatar style={{ backgroundColor: Colors.WhiteSmoke }} src={Me} alt="avatar" />
+      </Flip>
     </Col>
     <Col span={24}>
       <H1>Hello! I'm Nam. Nice to meet you.</H1>

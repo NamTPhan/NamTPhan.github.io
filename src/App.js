@@ -1,6 +1,6 @@
-import React, { useState, } from "react";
-import { Switch, Row, Col } from "antd";
-import { ThemeProvider } from "styled-components";
+import React, { useState } from "react";
+import { Row, Col } from "antd";
+import { ThemeProvider } from "styled-components"
 
 import LandingSection from "./components/LandingSection";
 import AboutSection from "./components/AboutSection";
@@ -25,9 +25,9 @@ const App = () => {
       <GlobalStyles />
 
       <Row>
-        <Col 
-        style={{ textAlign: 'center', paddingTop: 20 }} 
-        span={24}
+        <Col
+          style={{ textAlign: 'center', paddingTop: 20 }}
+          span={24}
         >
           {
             theme === 'dark'

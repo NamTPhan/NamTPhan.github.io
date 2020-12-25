@@ -7,6 +7,7 @@ import {
   GithubOutlined,
   HeartTwoTone
 } from "@ant-design/icons";
+import { Flip, Fade } from 'react-reveal';
 
 import styled, { withTheme } from "styled-components";
 import * as Colors from "../styles/Colors";
@@ -51,58 +52,62 @@ const A = styled.a`
 const LandingSection = (props) => (
   <Row style={{ height: '100vh', paddingTop: 80 }}>
     <Col span={24}>
-      <H1>
-        Hi, my name is <B>Nam Phan</B>
-      </H1>
+      <Fade>
+        <H1>
+          Hi, my name is <B>Nam Phan</B>
+        </H1>
+      </Fade>
       <H2>
         Front-End Developer - Mobile & Web - Software Engineering Student
       </H2>
       <H2>
         I build things for the web and mobile, and I <HeartTwoTone twoToneColor={Colors.Red} /> what I do.
       </H2>
-      <Col align='center'>
-        <A
-          href="https://www.linkedin.com/in/namtphan2"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button type="primary" shape="circle" icon={<LinkedinOutlined />} size={'large'} />
-        </A>
-        <A
-          href="https://play.google.com/store/apps/developer?id=NPDevelopment+Apps"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button
-            style={{ backgroundColor: Colors.Green, color: Colors.White, borderColor: Colors.Green }}
-            shape="circle"
-            icon={<AndroidOutlined />}
-            size={'large'}
-          />
-        </A>
-        <A
-          href="https://github.com/NamTPhan"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button
-            style={{ backgroundColor: Colors.Black, color: Colors.White }}
-            shape="circle"
-            icon={<GithubOutlined />}
-            size={'large'}
-          />
-        </A>
-        <A
-          href="mailto:namtphann@gmail.com"
-        >
-          <Button
-            style={{ backgroundColor: Colors.Red, color: Colors.White, borderColor: Colors.Red }}
-            shape="circle"
-            icon={<MailOutlined />}
-            size={'large'}
-          />
-        </A>
-      </Col>
+      <Flip>
+        <Col align='center'>
+          <A
+            href="https://www.linkedin.com/in/namtphan2"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button type="primary" shape="circle" icon={<LinkedinOutlined />} size={'large'} />
+          </A>
+          <A
+            href="https://play.google.com/store/apps/developer?id=NPDevelopment+Apps"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              style={{ backgroundColor: Colors.Green, color: Colors.White, borderColor: Colors.Green }}
+              shape="circle"
+              icon={<AndroidOutlined />}
+              size={'large'}
+            />
+          </A>
+          <A
+            href="https://github.com/NamTPhan"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              style={{ backgroundColor: Colors.Black, color: Colors.White }}
+              shape="circle"
+              icon={<GithubOutlined />}
+              size={'large'}
+            />
+          </A>
+          <A
+            href="mailto:namtphann@gmail.com"
+          >
+            <Button
+              style={{ backgroundColor: Colors.Red, color: Colors.White, borderColor: Colors.Red }}
+              shape="circle"
+              icon={<MailOutlined />}
+              size={'large'}
+            />
+          </A>
+        </Col>
+      </Flip>
     </Col>
     <Col span={24}>
       <Illustration src={Laptop} alt='laptop' />
