@@ -1,25 +1,27 @@
 import React from "react";
 import { Col } from "antd";
 import { CaretRightOutlined } from "@ant-design/icons";
+
 import styled, { withTheme } from "styled-components";
+import * as Colors from "../styles/Colors";
 
 const Span = styled.span`
   font-size: 15px;
   font-weight: 700;
-  color: ${({ theme }) => theme.titleText};
+  color: ${Colors.White};
 `;
 
 const P = styled.p`
   font-size: ${(props) => props.fontSize};
   font-weight: 500;
-  color: ${({ theme }) => theme.titleText};
+  color: ${Colors.White};
   margin: 0;
 `;
 
 const UL = styled.ul`
-  font-size: 13px;
+  font-size: 1rem;
   font-weight: 400;
-  color: ${({ theme }) => theme.titleText};
+  color: ${Colors.White};
   list-style: none;
   padding: 0;
 `;
@@ -36,7 +38,12 @@ const ExperienceBlock = (props) => (
   >
     <Span>
       {props.title}{" "}
-      <a href={props.website} target="_blank" rel="noopener noreferrer" style={{ color: props.theme.primary }}>
+      <a
+        href={props.website}
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{ color: Colors.White }}
+      >
         @ {props.company}{" "}
         <img
           src={require("../assets/flags/" + props.country + ".png")}
@@ -48,6 +55,7 @@ const ExperienceBlock = (props) => (
     </Span>
     <P fontSize="14px">{props.date}</P>
     <P fontSize="13px">{props.type}</P>
+    <br />
     <UL>
       {props.activities.map((act, index) => (
         <li key={"nr" + index}>

@@ -5,8 +5,11 @@ import {
   LinkedinOutlined,
   AndroidOutlined,
   GithubOutlined,
+  HeartTwoTone
 } from "@ant-design/icons";
+
 import styled, { withTheme } from "styled-components";
+import * as Colors from "../styles/Colors";
 
 import Laptop from "../assets/laptop.svg";
 
@@ -25,8 +28,8 @@ const H2 = styled.h2`
 `;
 
 const Illustration = styled.img`
-  width: 30%;
-  height: auto;
+  width: 70%;
+  height: 500px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -37,7 +40,7 @@ const B = styled.b`
 `;
 
 const A = styled.a`
-  color: #fff;
+  color: ${Colors.White};
   margin: 0 8px;
 
   span {
@@ -46,7 +49,7 @@ const A = styled.a`
 `;
 
 const LandingSection = (props) => (
-  <Row style={{ height: '100vh' }}>
+  <Row style={{ height: '100vh', paddingTop: 80 }}>
     <Col span={24}>
       <H1>
         Hi, my name is <B>Nam Phan</B>
@@ -55,7 +58,7 @@ const LandingSection = (props) => (
         Front-End Developer - Mobile & Web - Software Engineering Student
       </H2>
       <H2>
-        I build things for the web and mobile, and I love what I do.
+        I build things for the web and mobile, and I <HeartTwoTone twoToneColor={Colors.Red} /> what I do.
       </H2>
       <Col align='center'>
         <A
@@ -72,6 +75,16 @@ const LandingSection = (props) => (
         >
           <Button type="primary" shape="circle" icon={<AndroidOutlined />} size={'large'} />
         </A>
+        <Button
+          style={{
+            marginLeft: 8,
+            marginRight: 8
+          }}
+          type="primary"
+          shape="circle"
+          icon={<MailOutlined />}
+          size={'large'}
+        />
         <A
           href="https://github.com/NamTPhan"
           target="_blank"
