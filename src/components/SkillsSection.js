@@ -32,6 +32,13 @@ const Icon = styled.p`
   margin-bottom: 20px;
 `;
 
+const H1 = styled.h1`
+  font-size: 2rem;
+  font-weight: 800;
+  color: ${({ theme }) => theme.titleText};
+  text-align: center;
+`;
+
 const CardBlock = (props) => {
   return (
     <Col xs={24} sm={24} md={8} lg={8} xl={8} style={{ textAlign: "center" }}>
@@ -47,28 +54,29 @@ const CardBlock = (props) => {
 };
 
 const SkillsSection = () => (
-  <Row
-    style={{ paddingLeft: "20px", paddingRight: "20px", marginTop: "50px" }}
-  >
-    <CardBlock
-      icon={<LayoutTwoTone twoToneColor="#eb2f96" />}
-      title="Web Development"
-      description="I like to code web apps from scratch by using awesome libraries and frameworks."
-      tools="JavaScript, TypeScript, Angular, (S)CSS, styled-components, React, lodash, redux, VS Code, Python"
-    />
-    <CardBlock
-      icon={<MobileTwoTone twoToneColor="#52c41a" />}
-      title="Mobile Development"
-      description="I also like to create mobile apps that could help people in their daily lives or for entertainment."
-      tools="Java, React Native, Ionic, VS Code, Android Studio, Kotlin (Currently learning), Flutter (Currently learning)"
-    />
-    <CardBlock
-      icon={<EditTwoTone />}
-      title="Design & Other tools"
-      description="I like to keep the design simple and clean. I mostly use the material design system."
-      tools="Photoshop, Pen & Paper, ui8.net, Git, GitHub, GitLab, Terminal/CMD, Sourcetree/Gitkraken, Postman"
-    />
-  </Row>
+  <Col xs={24} sm={24} md={20} lg={24} xl={24} style={{ marginTop: "50px" }}>
+    <H1>Skills & Experience</H1>
+    <Row style={{ paddingLeft: "20px", paddingRight: "20px" }}>
+      <CardBlock
+        icon={<LayoutTwoTone twoToneColor="#eb2f96" />}
+        title="Web Development"
+        description="I like to code web apps from scratch by using awesome libraries and frameworks."
+        tools="JavaScript, TypeScript, Angular, (S)CSS, styled-components, React, lodash, redux, VS Code, Python"
+      />
+      <CardBlock
+        icon={<MobileTwoTone twoToneColor="#52c41a" />}
+        title="Mobile Development"
+        description="I also like to create mobile apps that could help people in their daily lives or for entertainment."
+        tools="Java, React Native, Ionic, VS Code, Android Studio, Kotlin (Currently learning), Flutter (Currently learning)"
+      />
+      <CardBlock
+        icon={<EditTwoTone />}
+        title="Design & Other tools"
+        description="I like to keep the design simple and clean. I mostly use the material design system."
+        tools="Photoshop, Pen & Paper, ui8.net, Git, GitHub, GitLab, Terminal/CMD, Sourcetree/Gitkraken, Postman"
+      />
+    </Row>
+  </Col>
 );
 
 export default SkillsSection;
