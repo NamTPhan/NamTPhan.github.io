@@ -10,15 +10,6 @@ const MeLogo = styled.img`
   margin-bottom: 20px;
 `;
 
-const A = styled.a`
-  color: #fff;
-  margin: 0 8px;
-
-  span {
-    font-size: 35px;
-  }
-`;
-
 const P = styled.p`
   color: #fff;
   font-size: 14px;
@@ -30,7 +21,7 @@ const ContactSection = (props) => (
     <Col
       span={24}
       style={{
-        backgroundColor: props.theme.primaryBlue,
+        backgroundColor: props.theme.primary,
         padding: "0 2rem 1rem 2rem",
         textAlign: "center",
       }}

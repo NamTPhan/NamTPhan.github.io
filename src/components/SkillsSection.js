@@ -48,7 +48,7 @@ const CardBlock = (props) => {
 
 const SkillsSection = () => (
   <Row
-    style={{ paddingLeft: "20px", paddingRight: "20px", marginTop: "-80px" }}
+    style={{ paddingLeft: "20px", paddingRight: "20px", marginTop: "50px" }}
   >
     <CardBlock
       icon={<LayoutTwoTone twoToneColor="#eb2f96" />}

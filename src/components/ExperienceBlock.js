@@ -36,7 +36,7 @@ const ExperienceBlock = (props) => (
   >
     <Span>
       {props.title}{" "}
-      <a href={props.website} target="_blank" rel="noopener noreferrer" style={{ color: props.theme.primaryBlue }}>
+      <a href={props.website} target="_blank" rel="noopener noreferrer" style={{ color: props.theme.primary }}>
         @ {props.company}{" "}
         <img
           src={require("../assets/flags/" + props.country + ".png")}

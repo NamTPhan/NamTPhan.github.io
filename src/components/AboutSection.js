@@ -28,17 +28,18 @@ const Avatar = styled.img`
 const AboutSection = (props) => (
   <Row
     style={{
-      backgroundColor: props.theme.primaryBlue,
-      padding: "9rem 1.5rem",
-      paddingBottom: "11rem",
+      backgroundColor: props.theme.primary,
+      paddingTop: "3rem",
+      paddingBottom: "5rem",
       textAlign: "center",
     }}
   >
-    <Col span={12}>
-      <Avatar style={{ backgroundColor: props.theme.primaryBlue }} src={Me} alt="avatar" />
+    <Col span={24}>
+      <Avatar style={{ backgroundColor: '#f4f4f4'}} src={Me} alt="avatar" />
     </Col>
-    <Col span={12}>
+    <Col span={24}>
       <H1>Hello! I'm Nam. Nice to meet you.</H1>
+      <Col span={12} offset={6}>
       <H2>
         I'm currently a 4th year Software Engineering student at the Amsterdam
         University of Applied Sciences. I'm a web and mobile app developer.
@@ -49,6 +50,8 @@ const AboutSection = (props) => (
         I like to work on my own projects or watching videos about new tech and
         gadgets.
       </H2>
+      </Col>
+     
     </Col>
   </Row>
 );
