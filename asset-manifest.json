@@ -1,32 +1,32 @@
 {
   "files": {
-    "main.js": "/static/js/main.629c1561.chunk.js",
-    "main.js.map": "/static/js/main.629c1561.chunk.js.map",
+    "main.js": "/static/js/main.3ee2755f.chunk.js",
+    "main.js.map": "/static/js/main.3ee2755f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
     "static/css/2.027e9bb2.chunk.css": "/static/css/2.027e9bb2.chunk.css",
-    "static/js/2.47956a93.chunk.js": "/static/js/2.47956a93.chunk.js",
-    "static/js/2.47956a93.chunk.js.map": "/static/js/2.47956a93.chunk.js.map",
+    "static/js/2.61ea4903.chunk.js": "/static/js/2.61ea4903.chunk.js",
+    "static/js/2.61ea4903.chunk.js.map": "/static/js/2.61ea4903.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.bed0ead8d13f2e3b313db9afa21bca3b.js": "/precache-manifest.bed0ead8d13f2e3b313db9afa21bca3b.js",
+    "precache-manifest.fc13c55b5f48d4720102189242756f31.js": "/precache-manifest.fc13c55b5f48d4720102189242756f31.js",
     "service-worker.js": "/service-worker.js",
     "static/css/2.027e9bb2.chunk.css.map": "/static/css/2.027e9bb2.chunk.css.map",
-    "static/js/2.47956a93.chunk.js.LICENSE.txt": "/static/js/2.47956a93.chunk.js.LICENSE.txt",
+    "static/js/2.61ea4903.chunk.js.LICENSE.txt": "/static/js/2.61ea4903.chunk.js.LICENSE.txt",
     "static/media/Falco Networks.png": "/static/media/Falco Networks.1ce97257.png",
     "static/media/Fish on Fire.png": "/static/media/Fish on Fire.4578345f.png",
     "static/media/PLANit GLOBAL.png": "/static/media/PLANit GLOBAL.3eadf2ef.png",
     "static/media/avatar.svg": "/static/media/avatar.2780977f.svg",
-    "static/media/countrybucketlist.png": "/static/media/countrybucketlist.240d4a30.png",
-    "static/media/easyworx.png": "/static/media/easyworx.f3a3bd03.png",
+    "static/media/countrybucketlist.png": "/static/media/countrybucketlist.32c19fbf.png",
+    "static/media/easyworx.png": "/static/media/easyworx.38ba64cb.png",
     "static/media/laptop.svg": "/static/media/laptop.9e0aebbb.svg",
     "static/media/moon.svg": "/static/media/moon.5039864c.svg",
-    "static/media/mystudyprogress.png": "/static/media/mystudyprogress.307beeba.png",
+    "static/media/mystudyprogress.png": "/static/media/mystudyprogress.dae868c6.png",
     "static/media/sun.svg": "/static/media/sun.e1bb2cc7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
     "static/css/2.027e9bb2.chunk.css",
-    "static/js/2.47956a93.chunk.js",
-    "static/js/main.629c1561.chunk.js"
+    "static/js/2.61ea4903.chunk.js",
+    "static/js/main.3ee2755f.chunk.js"
   ]
 }
