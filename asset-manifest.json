@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.3ee2755f.chunk.js",
-    "main.js.map": "/static/js/main.3ee2755f.chunk.js.map",
+    "main.js": "/static/js/main.1da174b8.chunk.js",
+    "main.js.map": "/static/js/main.1da174b8.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
-    "static/css/2.027e9bb2.chunk.css": "/static/css/2.027e9bb2.chunk.css",
-    "static/js/2.61ea4903.chunk.js": "/static/js/2.61ea4903.chunk.js",
-    "static/js/2.61ea4903.chunk.js.map": "/static/js/2.61ea4903.chunk.js.map",
+    "static/css/2.8c1dcbfa.chunk.css": "/static/css/2.8c1dcbfa.chunk.css",
+    "static/js/2.88166d50.chunk.js": "/static/js/2.88166d50.chunk.js",
+    "static/js/2.88166d50.chunk.js.map": "/static/js/2.88166d50.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.fc13c55b5f48d4720102189242756f31.js": "/precache-manifest.fc13c55b5f48d4720102189242756f31.js",
+    "precache-manifest.aba748efaf8fe84fec92c8f56dd2f8da.js": "/precache-manifest.aba748efaf8fe84fec92c8f56dd2f8da.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/2.027e9bb2.chunk.css.map": "/static/css/2.027e9bb2.chunk.css.map",
-    "static/js/2.61ea4903.chunk.js.LICENSE.txt": "/static/js/2.61ea4903.chunk.js.LICENSE.txt",
+    "static/css/2.8c1dcbfa.chunk.css.map": "/static/css/2.8c1dcbfa.chunk.css.map",
+    "static/js/2.88166d50.chunk.js.LICENSE.txt": "/static/js/2.88166d50.chunk.js.LICENSE.txt",
     "static/media/Falco Networks.png": "/static/media/Falco Networks.1ce97257.png",
     "static/media/Fish on Fire.png": "/static/media/Fish on Fire.4578345f.png",
     "static/media/PLANit GLOBAL.png": "/static/media/PLANit GLOBAL.3eadf2ef.png",
@@ -21,12 +21,13 @@
     "static/media/laptop.svg": "/static/media/laptop.9e0aebbb.svg",
     "static/media/moon.svg": "/static/media/moon.5039864c.svg",
     "static/media/mystudyprogress.png": "/static/media/mystudyprogress.dae868c6.png",
-    "static/media/sun.svg": "/static/media/sun.e1bb2cc7.svg"
+    "static/media/sun.svg": "/static/media/sun.e1bb2cc7.svg",
+    "static/media/sustainablechoice.png": "/static/media/sustainablechoice.bef28c27.png"
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
-    "static/css/2.027e9bb2.chunk.css",
-    "static/js/2.61ea4903.chunk.js",
-    "static/js/main.3ee2755f.chunk.js"
+    "static/css/2.8c1dcbfa.chunk.css",
+    "static/js/2.88166d50.chunk.js",
+    "static/js/main.1da174b8.chunk.js"
   ]
 }
