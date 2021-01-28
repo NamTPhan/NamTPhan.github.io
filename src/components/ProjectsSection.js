@@ -46,116 +46,77 @@ const ProjectsSection = () => (
     <Col xs={24} sm={24} md={16} lg={16} xl={16}>
       <H1>Some of my Works</H1>
       <H3>Below are just a few projects that I have worked on in the past.</H3>
-      <Slide left>
-        <Row style={{ marginBottom: 15 }}>
-          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-            <FeatureImage
-              src={require("../assets/projects/countrybucketlist.png")}
-              alt="countrybucketlist"
-            />
-          </Col>
-          <Col
-            xs={24} sm={24} md={12} lg={12} xl={12}
-            style={{ margin: 'auto', paddingLeft: 15, paddingRight: 15 }}
-          >
-            <B>{ProjectsData[0].name} - {ProjectsData[0].type}</B>
-            <P>{ProjectsData[0].description}</P>
-            <a
-              href={ProjectsData[0].android}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AndroidFilled
-                style={{ fontSize: "26px", color: Colors.Green }}
-              />
-            </a>
-            <br />
-            {ProjectsData[0].tags.map((tag, index) => (
-              <Tag
-                key={tag + index}
-                color={Colors.Green}
-                style={{ marginTop: 10, fontSize: 14 }}
+      {ProjectsData.map((project) => {
+        return (
+          <Slide key={project.name} left={project.slideLeft} right={project.slideRight}>
+            <Row style={{ marginBottom: 15 }}>
+              {
+                project.imageLeftRight === 'left' && (
+                  <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                    <FeatureImage
+                      src={require("../assets/projects/" + project.image + ".png")}
+                      alt={project.name}
+                    />
+                  </Col>
+                )
+              }
+              <Col
+                xs={24} sm={24} md={12} lg={12} xl={12}
+                style={{ margin: 'auto', paddingLeft: 15, paddingRight: 15 }}
               >
-                {tag}
-              </Tag>
-            ))}
-          </Col>
-        </Row>
-      </Slide>
-
-      <Slide right>
-        <Row style={{ marginBottom: 15 }}>
-          <Col
-            xs={24} sm={24} md={12} lg={12} xl={12}
-            style={{ margin: 'auto', paddingLeft: 15, paddingRight: 15 }}
-          >
-            <B>{ProjectsData[1].name} - {ProjectsData[1].type}</B>
-            <P>{ProjectsData[1].description}</P>
-            <a
-              href={ProjectsData[1].android}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <AndroidFilled
-                style={{ fontSize: "26px", color: Colors.Green }}
-              />
-            </a>
-            <br />
-            {ProjectsData[1].tags.map((tag, index) => (
-              <Tag
-                key={tag + index}
-                color={Colors.Green}
-                style={{ marginTop: 10, fontSize: 14 }}
-              >
-                {tag}
-              </Tag>
-            ))}
-          </Col>
-          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-            <FeatureImage
-              src={require("../assets/projects/mystudyprogress.png")}
-              alt="mystudyprogress"
-            />
-          </Col>
-        </Row>
-      </Slide>
-
-      <Slide left>
-        <Row style={{ marginBottom: 15 }}>
-          <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-            <FeatureImage
-              src={require("../assets/projects/easyworx.png")}
-              alt="easyworx"
-            />
-          </Col>
-          <Col
-            xs={24} sm={24} md={12} lg={12} xl={12}
-            style={{ margin: 'auto', paddingLeft: 15, paddingRight: 15 }}
-          >
-            <B>{ProjectsData[2].name} - {ProjectsData[2].type}</B>
-            <P>{ProjectsData[2].description}</P>
-            <a
-              href={ProjectsData[2].website}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <LinkOutlined
-                style={{ fontSize: "26px" }}
-              />
-            </a>
-            <br />
-            {ProjectsData[2].tags.map((tag, index) => (
-              <Tag
-                key={tag + index}
-                color={Colors.Green}
-                style={{ marginTop: 10, fontSize: 14 }}
-              >
-                {tag}
-              </Tag>
-            ))}
-          </Col>
-        </Row>
-      </Slide>
+                <B>{project.name} - {project.type}</B>
+                <P>{project.description}</P>
+                {
+                  project.android && (
+                    <a
+                      href={project.android}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <AndroidFilled
+                        style={{ fontSize: "26px", color: Colors.Green }}
+                      />
+                    </a>
+                  )
+                }
+                {
+                  project.website && (
+                    <a
+                      href={project.website}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <LinkOutlined
+                        style={{ fontSize: "26px" }}
+                      />
+                    </a>
+                  )
+                }
+                <br />
+                {project.tags.map((tag, index) => (
+                  <Tag
+                    key={tag + index}
+                    color={Colors.Green}
+                    style={{ marginTop: 10, fontSize: 14 }}
+                  >
+                    {tag}
+                  </Tag>
+                ))}
+              </Col>
+              {
+                project.imageLeftRight === 'right' && (
+                  <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+                    <FeatureImage
+                      src={require("../assets/projects/" + project.image + ".png")}
+                      alt={project.name}
+                    />
+                  </Col>
+                )
+              }
+            </Row>
+          </Slide>
+        );
+      })}
     </Col>
   </Row>
 );

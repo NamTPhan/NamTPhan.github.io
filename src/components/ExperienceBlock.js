@@ -33,7 +33,7 @@ const CompanyLogo = styled.img`
   padding: 5px;
   display: flex;
   background-color: ${Colors.White};
-  border-radius: 5%;
+  border-radius: 10px;
 `
 
 const ExperienceBlock = (props) => (
@@ -46,20 +46,13 @@ const ExperienceBlock = (props) => (
       <Col xs={24} sm={24} md={12} lg={12} xl={12}>
         <Span>
           {props.title}{" "}
-          <a
-            href={props.website}
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{ color: Colors.White }}
-          >
             @ {props.company}{" "}
-            <img
-              src={require("../assets/flags/" + props.country + ".png")}
-              width="22"
-              height="16"
-              alt="country"
-            />
-          </a>
+          <img
+            src={require("../assets/flags/" + props.country + ".png")}
+            width="22"
+            height="16"
+            alt="country"
+          />
         </Span>
         <P fontSize="14px">{props.date}</P>
         <P fontSize="13px">{props.type}</P>
@@ -72,11 +65,17 @@ const ExperienceBlock = (props) => (
           ))}
         </UL>
       </Col>
-      <Col xs={24} sm={24} md={12} lg={12} xl={12} >
-        <CompanyLogo
-          src={require("../assets/company/" + props.company + ".png")}
-          alt="company"
-        />
+      <Col xs={24} sm={24} md={12} lg={12} xl={12}>
+        <a
+          href={props.website}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <CompanyLogo
+            src={require("../assets/company/" + props.company + ".png")}
+            alt="company"
+          />
+        </a>
       </Col>
     </Row>
   </Col>

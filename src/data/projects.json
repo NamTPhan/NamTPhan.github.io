@@ -1,5 +1,18 @@
 [
   {
+    "id": "sustainablechoice",
+    "name": "Sustainable Choice",
+    "description": "Mobile application built with React Native to help consumers easily find the sustainability of supermarket products and compare this against their own preferences.",
+    "image": "sustainablechoice",
+    "tags": ["JavaScript", "React Native", "Redux", "Firebase", "Expo"],
+    "type": "Startup",
+    "android": "",
+    "website": "https://sustainablechoice.net",
+    "slideLeft": true,
+    "slideRight": false,
+    "imageLeftRight": "left"
+  },
+  {
     "id": "countrybucketlist",
     "name": "Country Bucket List",
     "description": "Country Bucket List, is an easy way to manage multiple bucket lists. Instead of one big bucket list you create several separated bucket lists for each country you visit or are planning to visit. ",
@@ -7,7 +20,10 @@
     "tags": ["JavaScript", "React Native", "Redux", "NativeBase", "Expo"],
     "type": "Personal project",
     "android": "https://play.google.com/store/apps/details?id=com.npdevelopment.countrybucketlist",
-    "website": ""
+    "website": "",
+    "slideLeft": false,
+    "slideRight": true,
+    "imageLeftRight": "right"
   },
   {
     "id": "mystudyprogress",
@@ -17,7 +33,10 @@
     "tags": ["TypeScript", "Ionic", "Chart.js"],
     "type": "Personal project",
     "android": "https://play.google.com/store/apps/details?id=com.npdevelopment.mystudyprogress",
-    "website": ""
+    "website": "",
+    "slideLeft": true,
+    "slideRight": false,
+    "imageLeftRight": "left"
   },
   {
     "id": "easyworx",
@@ -27,6 +46,9 @@
     "tags": ["Next.js", "Redux", "styled-components", "Formik"],
     "type": "Internship project",
     "android": "",
-    "website": "http://vacatures.easyworx.nl"
+    "website": "http://vacatures.easyworx.nl",
+    "slideLeft": false,
+    "slideRight": true,
+    "imageLeftRight": "right"
   }
 ]

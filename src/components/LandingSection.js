@@ -7,7 +7,7 @@ import {
   GithubOutlined,
   HeartTwoTone
 } from "@ant-design/icons";
-import { Flip, Fade } from 'react-reveal';
+import { LightSpeed, Fade } from 'react-reveal';
 
 import styled, { withTheme } from "styled-components";
 import * as Colors from "../styles/Colors";
@@ -63,7 +63,7 @@ const LandingSection = (props) => (
       <H2>
         I build things for the web and mobile, and I <HeartTwoTone twoToneColor={Colors.Red} /> what I do.
       </H2>
-      <Flip>
+      <LightSpeed>
         <Col align='center'>
           <A
             href="https://www.linkedin.com/in/namtphan2"
@@ -107,7 +107,7 @@ const LandingSection = (props) => (
             />
           </A>
         </Col>
-      </Flip>
+      </LightSpeed>
     </Col>
     <Col span={24}>
       <Illustration src={Laptop} alt='laptop' />
