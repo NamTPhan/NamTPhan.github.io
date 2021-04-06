@@ -71,13 +71,13 @@ const SkillsSection = () => (
           icon={<MobileTwoTone twoToneColor={Colors.Green} />}
           title="Mobile Development"
           description="I also like to create mobile apps that could help people in their daily lives or for entertainment."
-          tools="Java, React Native, Ionic, VS Code, Android Studio, Kotlin (Learning), Flutter (Learning)"
+          tools="Java, React Native, Ionic, VS Code, Android Studio, **Learning Flutter and Swift**"
         />
         <CardBlock
           icon={<EditTwoTone />}
           title="Design & Other tools"
           description="I like to keep the design simple and clean. I mostly use the material design system."
-          tools="Photoshop, Pen & Paper, ui8.net, Git, GitHub, GitLab, Terminal, Sourcetree/Gitkraken, Postman"
+          tools="Photoshop, Pen & Paper, ui8.net, Git, GitHub, GitLab, Terminal, Sourcetree/Gitkraken, Postman, RunJS"
         />
       </Row>
     </Zoom>

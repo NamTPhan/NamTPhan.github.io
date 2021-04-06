@@ -37,7 +37,6 @@ const B = styled.b`
 const FeatureImage = styled.img`
   width: 100%;
   max-height: 500px;
-  margin-bottom: 20px;
 `;
 
 const ProjectsSection = () => (
