@@ -95,8 +95,8 @@ const ProjectsSection = () => (
                 {project.tags.map((tag, index) => (
                   <Tag
                     key={tag + index}
-                    color={Colors.Green}
-                    style={{ marginTop: 10, fontSize: 14 }}
+                    color={Colors.Blue}
+                    style={{ marginTop: 10, fontSize: 14, fontWeight: 'bold' }}
                   >
                     {tag}
                   </Tag>

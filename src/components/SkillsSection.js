@@ -7,27 +7,28 @@ import styled from "styled-components";
 import * as Colors from "../styles/Colors";
 
 const StyledCard = styled(Card)`
-  box-shadow: 0 5px 10px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-  margin-left: 10px;
-  margin-right: 10px;
+  background-color: ${Colors.Transparent};
+  margin-left: 20px;
+  margin-right: 20px;
   margin-bottom: 20px;
   border-radius: 15px;
 `
 
 const CardTitle = styled.h1`
-  color: ${Colors.DarkBlue};
+  color: ${Colors.Blue};
   font-weight: 800;
   font-size: 1.2rem;
 `;
 
 const CardSubText = styled.b`
   font-size: 1rem;
-  color: ${Colors.Blue};
+  color: ${Colors.White};
 `;
 
 const CardDescription = styled.p`
   font-weight: 500;
   font-size: 15px;
+  color: ${Colors.White};
 `;
 
 const Icon = styled.p`
@@ -71,13 +72,13 @@ const SkillsSection = () => (
           icon={<MobileTwoTone twoToneColor={Colors.Green} />}
           title="Mobile Development"
           description="I also like to create mobile apps that could help people in their daily lives or for entertainment."
-          tools="Java, React Native, Ionic, VS Code, Android Studio, **Learning Flutter and Swift**"
+          tools="Java, React Native, Ionic, VS Code, Android Studio"
         />
         <CardBlock
           icon={<EditTwoTone />}
           title="Design & Other tools"
           description="I like to keep the design simple and clean. I mostly use the material design system."
-          tools="Photoshop, Pen & Paper, ui8.net, Git, GitHub, GitLab, Terminal, Sourcetree/Gitkraken, Postman, RunJS"
+          tools="Photoshop, ui8.net, Git, GitLab, Terminal, Sourcetree/Gitkraken, Postman, RunJS"
         />
       </Row>
     </Zoom>

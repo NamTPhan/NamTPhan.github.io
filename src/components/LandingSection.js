@@ -70,7 +70,7 @@ const LandingSection = (props) => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button type="primary" shape="circle" icon={<LinkedinOutlined />} size={'large'} />
+            <Button style={{ backgroundColor: 'transparent', color: Colors.White }} icon={<LinkedinOutlined />} size={'large'} />
           </A>
           <A
             href="https://play.google.com/store/apps/developer?id=NPDevelopment+Apps"
@@ -78,8 +78,7 @@ const LandingSection = (props) => (
             rel="noopener noreferrer"
           >
             <Button
-              style={{ backgroundColor: Colors.Green, color: Colors.White, borderColor: Colors.Green }}
-              shape="circle"
+              style={{ backgroundColor: 'transparent', color: Colors.White }}
               icon={<AndroidOutlined />}
               size={'large'}
             />
@@ -90,8 +89,7 @@ const LandingSection = (props) => (
             rel="noopener noreferrer"
           >
             <Button
-              style={{ backgroundColor: Colors.Black, color: Colors.White }}
-              shape="circle"
+              style={{ backgroundColor: 'transparent', color: Colors.White }}
               icon={<GithubOutlined />}
               size={'large'}
             />
@@ -100,8 +98,7 @@ const LandingSection = (props) => (
             href="mailto:namtphann@gmail.com"
           >
             <Button
-              style={{ backgroundColor: Colors.Red, color: Colors.White, borderColor: Colors.Red }}
-              shape="circle"
+              style={{ backgroundColor: 'transparent', color: Colors.White }}
               icon={<MailOutlined />}
               size={'large'}
             />

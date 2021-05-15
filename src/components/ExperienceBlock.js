@@ -26,16 +26,6 @@ const UL = styled.ul`
   padding: 0;
 `;
 
-const CompanyLogo = styled.img`
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 5px;
-  display: flex;
-  background-color: ${Colors.White};
-  border-radius: 10px;
-`
-
 const ExperienceBlock = (props) => (
   <Col
     key={props.id}
@@ -71,10 +61,6 @@ const ExperienceBlock = (props) => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          <CompanyLogo
-            src={require("../assets/company/" + props.company + ".png")}
-            alt="company"
-          />
         </a>
       </Col>
     </Row>

@@ -5,7 +5,6 @@ import { ThemeProvider } from "styled-components"
 import LandingSection from "./components/LandingSection";
 import AboutSection from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
-import ExperienceSection from "./components/ExperienceSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
 
@@ -14,17 +13,17 @@ import { lightTheme, darkTheme } from "./components/Themes"
 import "antd/dist/antd.css";
 
 const App = () => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
-  const themeToggler = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
-  }
+  // const themeToggler = () => {
+  //   theme === 'light' ? setTheme('dark') : setTheme('light')
+  // }
 
   return (
     <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
       <GlobalStyles />
 
-      <Row>
+      {/* <Row>
         <Col
           style={{ textAlign: 'center', paddingTop: 20 }}
           span={24}
@@ -51,12 +50,11 @@ const App = () => {
               )
           }
         </Col>
-      </Row>
+      </Row> */}
 
       <LandingSection />
       <AboutSection />
       <SkillsSection />
-      <ExperienceSection />
       <ProjectsSection />
       <Footer />
     </ThemeProvider>
