@@ -13,45 +13,29 @@ import { lightTheme, darkTheme } from "./components/Themes"
 import "antd/dist/antd.css";
 
 const App = () => {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
-  // const themeToggler = () => {
-  //   theme === 'light' ? setTheme('dark') : setTheme('light')
-  // }
+  const themeToggler = () => {
+    theme === 'light' ? setTheme('dark') : setTheme('light')
+  }
 
   return (
     <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
       <GlobalStyles />
-
-      {/* <Row>
+      <Row>
         <Col
           style={{ textAlign: 'center', paddingTop: 20 }}
           span={24}
         >
-          {
-            theme === 'dark'
-              ? (
-                <img
-                  src={require("./assets/sun.svg")}
-                  width="35"
-                  height="35"
-                  alt="sun"
-                  onClick={themeToggler}
-                />
-              )
-              : (
-                <img
-                  src={require("./assets/moon.svg")}
-                  width="35"
-                  height="35"
-                  alt="sun"
-                  onClick={themeToggler}
-                />
-              )
-          }
+          <img
+            src={require(`./assets/${theme === 'dark' ? 'sun' : 'moon'}.svg`)}
+            width="35"
+            height="35"
+            alt="theme-toggler"
+            onClick={themeToggler}
+          />
         </Col>
-      </Row> */}
-
+      </Row>
       <LandingSection />
       <AboutSection />
       <SkillsSection />

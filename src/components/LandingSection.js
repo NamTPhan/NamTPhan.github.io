@@ -41,16 +41,23 @@ const B = styled.b`
 `;
 
 const A = styled.a`
-  color: ${Colors.White};
+  color: ${({ theme }) => theme.titleText};
   margin: 0 8px;
 
-  span {
-    font-size: 20px !important;
+  button {
+    border-radius: 20px !important;
+    border: none;
+
+    span {
+      font-size: 20px !important;
+      color: ${Colors.White};
+    }
   }
+ 
 `;
 
 const LandingSection = (props) => (
-  <Row style={{ height: '100vh', paddingTop: 80 }}>
+  <Row style={{ height: '95vh', paddingTop: 20 }}>
     <Col span={24}>
       <Fade>
         <H1>
@@ -58,7 +65,7 @@ const LandingSection = (props) => (
         </H1>
       </Fade>
       <H2>
-        Front-End Developer - Mobile & Web - Software Engineering Student
+        Front-End Developer - Mobile & Web - Software Engineer
       </H2>
       <H2>
         I build things for the web and mobile, and I <HeartTwoTone twoToneColor={Colors.Red} /> what I do.
@@ -70,7 +77,7 @@ const LandingSection = (props) => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button style={{ backgroundColor: 'transparent', color: Colors.White }} icon={<LinkedinOutlined />} size={'large'} />
+            <Button style={{ backgroundColor: '#2196f3' }} icon={<LinkedinOutlined />} size={'large'} />
           </A>
           <A
             href="https://play.google.com/store/apps/developer?id=NPDevelopment+Apps"
@@ -78,7 +85,7 @@ const LandingSection = (props) => (
             rel="noopener noreferrer"
           >
             <Button
-              style={{ backgroundColor: 'transparent', color: Colors.White }}
+              style={{ backgroundColor: '#4caf50' }}
               icon={<AndroidOutlined />}
               size={'large'}
             />
@@ -89,7 +96,7 @@ const LandingSection = (props) => (
             rel="noopener noreferrer"
           >
             <Button
-              style={{ backgroundColor: 'transparent', color: Colors.White }}
+              style={{ backgroundColor: '#607d8b' }}
               icon={<GithubOutlined />}
               size={'large'}
             />
@@ -98,7 +105,7 @@ const LandingSection = (props) => (
             href="mailto:namtphann@gmail.com"
           >
             <Button
-              style={{ backgroundColor: 'transparent', color: Colors.White }}
+              style={{ backgroundColor: '#f44336' }}
               icon={<MailOutlined />}
               size={'large'}
             />

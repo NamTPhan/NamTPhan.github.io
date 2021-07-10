@@ -11,7 +11,8 @@ const StyledCard = styled(Card)`
   margin-left: 20px;
   margin-right: 20px;
   margin-bottom: 20px;
-  border-radius: 15px;
+  border: none;
+  height: 350px;
 `
 
 const CardTitle = styled.h1`
@@ -22,13 +23,13 @@ const CardTitle = styled.h1`
 
 const CardSubText = styled.b`
   font-size: 1rem;
-  color: ${Colors.White};
+  color: ${({ theme }) => theme.titleText};
 `;
 
 const CardDescription = styled.p`
   font-weight: 500;
   font-size: 15px;
-  color: ${Colors.White};
+  color: ${({ theme }) => theme.titleText};
 `;
 
 const Icon = styled.p`
@@ -66,7 +67,7 @@ const SkillsSection = () => (
           icon={<LayoutTwoTone twoToneColor={Colors.Pink} />}
           title="Web Development"
           description="I like to code web apps from scratch by using awesome libraries and frameworks."
-          tools="JavaScript, TypeScript, React, (S)CSS, styled-components, Angular, lodash, redux, VS Code, Python"
+          tools="JavaScript, TypeScript, React, (S)CSS, styled-components, Angular, d3.js, redux, VS Code, Python"
         />
         <CardBlock
           icon={<MobileTwoTone twoToneColor={Colors.Green} />}
