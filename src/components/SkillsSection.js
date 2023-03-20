@@ -67,7 +67,7 @@ const SkillsSection = () => (
           icon={<LayoutTwoTone twoToneColor={Colors.Pink} />}
           title="Web Development"
           description="I like to code web apps from scratch by using awesome libraries and frameworks."
-          tools="JavaScript, TypeScript, React, (S)CSS, styled-components, Angular, d3.js, redux, VS Code, Python"
+          tools="JavaScript, TypeScript, React, Vue.js, Tailwind CSS, (S)CSS, styled-components, Angular, Redux, Pinia, VS Code"
         />
         <CardBlock
           icon={<MobileTwoTone twoToneColor={Colors.Green} />}
@@ -78,7 +78,7 @@ const SkillsSection = () => (
         <CardBlock
           icon={<EditTwoTone />}
           title="Design & Other tools"
-          description="I like to keep the design simple and clean. I mostly use the material design system."
+          description="I like to keep the design simple and clean."
           tools="Photoshop, ui8.net, Git, GitLab, Terminal, Sourcetree/Gitkraken, Postman, RunJS"
         />
       </Row>

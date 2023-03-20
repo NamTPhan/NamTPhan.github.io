@@ -21,7 +21,7 @@ const ContactSection = (props) => (
       }}
     >
       <P style={{ marginTop: "30px" }}>
-        © 2021 Designed & Developed by <b>Nam Phan</b>
+        © 2023 Designed & Developed by <b>Nam Phan</b>
         <br />
         Built with{" "}
         <b>

@@ -54,15 +54,14 @@ const AboutSection = (props) => (
         xl={{ span: 12, offset: 6 }}
       >
         <H2>
-          I'm a software engineering graduate with a passion for web & mobile development.
-          Currently I am more of a Front-End developer, but long-term I intend to
-          move towards becoming a Full-stack developer. I'm a flexible and
-          organized team player. I also like to meet and work with people from all
+          I'm a front-end developer working at Capgemini.
+          Currently I am more of a front-end developer, but long-term I intend to
+          move towards becoming a full-stack developer. I'm a flexible and
+          organized team player. I like to work with people from all
           over the world to learn more about different cultures. In my spare time
-          I like to work on my own projects, watching movies/series and reading stuff about new tech.
+          I like to work on my own projects, watching series, being creative with my 3D-printer and reading stuff about new tech.
         </H2>
       </Col>
-
     </Col>
   </Row>
 );

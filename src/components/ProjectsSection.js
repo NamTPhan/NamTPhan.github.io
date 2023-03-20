@@ -40,11 +40,11 @@ const FeatureImage = styled.img`
 `;
 
 const ProjectsSection = () => (
-  <Row style={{ marginBottom: "80px" }}>
+  <Row style={{ marginBottom: 80 }}>
     <Col xs={0} sm={0} md={4} lg={4} xl={4} />
     <Col xs={24} sm={24} md={16} lg={16} xl={16}>
       <H1>Some of my Works</H1>
-      <H3>Below are just a few projects that I have worked on in the past.</H3>
+      <H3 style={{ marginBottom: 20 }}>Below are just a few projects that I have worked on in the past.</H3>
       {ProjectsData.map((project) => {
         return (
           <Slide key={project.name} left={project.slideLeft} right={project.slideRight}>
