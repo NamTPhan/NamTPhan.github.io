@@ -1,0 +1,80 @@
+[
+  {
+    "id": "fakestorevue",
+    "name": "Fake Store Vue",
+    "description": "Fake store built with Vue 3. Used dummyJSON.com as back-end for product data.",
+    "image": "fakestorevue",
+    "tags": ["TypeScript", "Vue 3", "Pinia", "Tailwind CSS"],
+    "type": "Side project",
+    "android": "",
+    "website": "https://fake-store-vue.netlify.app/",
+    "slideLeft": true,
+    "slideRight": false,
+    "imageLeftRight": "left"
+  },
+  {
+    "id": "teslaclone",
+    "name": "Tesla Clone",
+    "description": "Landing page clone of the Tesla website.",
+    "image": "teslaclone",
+    "tags": ["JavaScript", "Vue 3", "Tailwind CSS"],
+    "type": "Side project",
+    "android": "",
+    "website": "https://tesla-clone-ntp.netlify.app/",
+    "slideLeft": false,
+    "slideRight": true,
+    "imageLeftRight": "right"
+  },
+  {
+    "id": "sustainablechoice",
+    "name": "Sustainable Choice",
+    "description": "Mobile application built with React Native to help consumers easily find the sustainability of supermarket products and compare this against their own preferences.",
+    "image": "sustainablechoice",
+    "tags": ["JavaScript", "React Native", "Redux", "Firebase", "Expo"],
+    "type": "Startup",
+    "android": "",
+    "website": "",
+    "slideLeft": true,
+    "slideRight": false,
+    "imageLeftRight": "left"
+  },
+  {
+    "id": "countrybucketlist",
+    "name": "Country Bucket List",
+    "description": "Country Bucket List, is an easy way to manage multiple bucket lists. Instead of one big bucket list you create several separated bucket lists for each country you visit or are planning to visit. ",
+    "image": "countrybucketlist",
+    "tags": ["JavaScript", "React Native", "Redux", "NativeBase", "Expo"],
+    "type": "Side project",
+    "android": "https://play.google.com/store/apps/details?id=com.npdevelopment.countrybucketlist",
+    "website": "",
+    "slideLeft": false,
+    "slideRight": true,
+    "imageLeftRight": "right"
+  },
+  {
+    "id": "mystudyprogress",
+    "name": "My Study Progress",
+    "description": "My Study Progress app allows you to add unlimited subjects/grades to your personal list. This app gives you a simple overview of the credits you have earned and the credits you still have to earn.",
+    "image": "mystudyprogress",
+    "tags": ["TypeScript", "Ionic", "Chart.js"],
+    "type": "Side project",
+    "android": "https://play.google.com/store/apps/details?id=com.npdevelopment.mystudyprogress",
+    "website": "",
+    "slideLeft": true,
+    "slideRight": false,
+    "imageLeftRight": "left"
+  },
+  {
+    "id": "easyworx",
+    "name": "Easyworx",
+    "description": "A job vacancy website where job seekers can find jobs based on their search preferences. I contributed to various features like generic components, forms, Google-for-Jobs and other front-end functionalities.",
+    "image": "easyworx",
+    "tags": ["Next.js", "Redux", "styled-components", "Formik"],
+    "type": "Internship project",
+    "android": "",
+    "website": "http://vacatures.easyworx.nl",
+    "slideLeft": false,
+    "slideRight": true,
+    "imageLeftRight": "right"
+  }
+]
