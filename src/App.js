@@ -10,7 +10,7 @@ import Footer from "./components/Footer";
 
 import { GlobalStyles } from "./components/GlobalStyle";
 import { lightTheme, darkTheme } from "./components/Themes"
-import "antd/dist/antd.css";
+import "antd/dist/reset.css";
 
 const App = () => {
   const [theme, setTheme] = useState('light');
