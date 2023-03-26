@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Row, Col } from "antd";
-import { ThemeProvider } from "styled-components"
+import { DefaultTheme, ThemeProvider } from "styled-components";
+import { lightTheme, darkTheme } from "./themes/themes";
+import GlobalStyle from "./styles/global-style";
 
 import LandingSection from "./components/LandingSection";
 import AboutSection from "./components/AboutSection";
@@ -8,30 +10,27 @@ import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
 
-import { GlobalStyles } from "./components/GlobalStyle";
-import { lightTheme, darkTheme } from "./components/Themes"
 import "antd/dist/reset.css";
 
 const App = () => {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState<DefaultTheme>(lightTheme);
 
   const themeToggler = () => {
-    theme === 'light' ? setTheme('dark') : setTheme('light')
-  }
+    setTheme(theme.title === "light" ? darkTheme : lightTheme);
+  };
 
   return (
-    <ThemeProvider theme={theme === 'dark' ? darkTheme : lightTheme}>
-      <GlobalStyles />
+    <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <Row>
-        <Col
-          style={{ textAlign: 'center', paddingTop: 20 }}
-          span={24}
-        >
+        <Col style={{ textAlign: "center", paddingTop: 20 }} span={24}>
           <img
-            src={require(`./assets/${theme === 'dark' ? 'sun' : 'moon'}.svg`)}
-            width="35"
-            height="35"
-            alt="theme-toggler"
+            src={require(`./assets/${
+              theme.title === "dark" ? "sun" : "moon"
+            }.svg`)}
+            width='35'
+            height='35'
+            alt='theme-toggler'
             onClick={themeToggler}
           />
         </Col>
@@ -43,6 +42,6 @@ const App = () => {
       <Footer />
     </ThemeProvider>
   );
-}
+};
 
 export default App;

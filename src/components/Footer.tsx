@@ -9,7 +9,7 @@ const P = styled.p`
   font-size: 14px;
 `;
 
-const ContactSection = (props) => (
+const ContactSection = props => (
   <Row>
     <Col xs={0} sm={0} md={2} lg={2} xl={2} />
     <Col
@@ -26,9 +26,9 @@ const ContactSection = (props) => (
         Built with{" "}
         <b>
           <a
-            href="https://ant.design/"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://ant.design/'
+            target='_blank'
+            rel='noopener noreferrer'
             style={{ color: Colors.White }}
           >
             Ant Design

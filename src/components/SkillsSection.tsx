@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col, Card } from "antd";
 import { EditTwoTone, LayoutTwoTone, MobileTwoTone } from "@ant-design/icons";
-import { Zoom } from 'react-reveal';
+import { Zoom } from "react-reveal";
 
 import styled from "styled-components";
 import * as Colors from "../styles/Colors";
@@ -13,7 +13,7 @@ const StyledCard = styled(Card)`
   margin-bottom: 20px;
   border: none;
   height: 350px;
-`
+`;
 
 const CardTitle = styled.h1`
   color: ${Colors.Blue};
@@ -44,7 +44,7 @@ const H1 = styled.h1`
   text-align: center;
 `;
 
-const CardBlock = (props) => {
+const CardBlock = props => {
   return (
     <Col xs={24} sm={24} md={8} lg={8} xl={8} style={{ textAlign: "center" }}>
       <StyledCard>
@@ -59,27 +59,27 @@ const CardBlock = (props) => {
 };
 
 const SkillsSection = () => (
-  <Col xs={24} sm={24} md={20} lg={24} xl={24} style={{ margin: '100px 0' }}>
+  <Col xs={24} sm={24} md={20} lg={24} xl={24} style={{ margin: "100px 0" }}>
     <H1>Skills & Experience</H1>
     <Zoom>
       <Row style={{ paddingLeft: "20px", paddingRight: "20px" }}>
         <CardBlock
           icon={<LayoutTwoTone twoToneColor={Colors.Pink} />}
-          title="Web Development"
-          description="I like to code web apps from scratch by using awesome libraries and frameworks."
-          tools="JavaScript, TypeScript, React, Vue.js, Tailwind CSS, (S)CSS, styled-components, Angular, Redux, Pinia, VS Code"
+          title='Web Development'
+          description='I like to code web apps from scratch by using awesome libraries and frameworks.'
+          tools='JavaScript, TypeScript, React, Vue.js, Tailwind CSS, (S)CSS, styled-components, Angular, Redux, Pinia, VS Code'
         />
         <CardBlock
           icon={<MobileTwoTone twoToneColor={Colors.Green} />}
-          title="Mobile Development"
-          description="I also like to create mobile apps that could help people in their daily lives or for entertainment."
-          tools="Java, React Native, Ionic, VS Code, Android Studio"
+          title='Mobile Development'
+          description='I also like to create mobile apps that could help people in their daily lives or for entertainment.'
+          tools='Java, React Native, Ionic, VS Code, Android Studio'
         />
         <CardBlock
           icon={<EditTwoTone />}
-          title="Design & Other tools"
-          description="I like to keep the design simple and clean."
-          tools="Photoshop, ui8.net, Git, GitLab, Terminal, Sourcetree/Gitkraken, Postman, RunJS"
+          title='Design & Other tools'
+          description='I like to keep the design simple and clean.'
+          tools='Photoshop, ui8.net, Git, GitLab, Terminal, Sourcetree/Gitkraken, Postman, RunJS'
         />
       </Row>
     </Zoom>

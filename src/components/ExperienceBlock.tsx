@@ -5,14 +5,18 @@ import { CaretRightOutlined } from "@ant-design/icons";
 import styled, { withTheme } from "styled-components";
 import * as Colors from "../styles/Colors";
 
+interface Props {
+  fontSize: string;
+}
+
 const Span = styled.span`
   font-size: 15px;
   font-weight: 700;
   color: ${Colors.White};
 `;
 
-const P = styled.p`
-  font-size: ${(props) => props.fontSize};
+const P = styled.p<Props>`
+  font-size: ${(props: any) => props.fontSize};
   font-weight: 500;
   color: ${Colors.White};
   margin: 0;
@@ -26,26 +30,21 @@ const UL = styled.ul`
   padding: 0;
 `;
 
-const ExperienceBlock = (props) => (
-  <Col
-    key={props.id}
-    span={24}
-    style={{ padding: "20px" }}
-  >
+const ExperienceBlock = props => (
+  <Col key={props.id} span={24} style={{ padding: "20px" }}>
     <Row>
       <Col xs={24} sm={24} md={12} lg={12} xl={12}>
         <Span>
-          {props.title}{" "}
-            @ {props.company}{" "}
+          {props.title} @ {props.company}{" "}
           <img
             src={require("../assets/flags/" + props.country + ".png")}
-            width="22"
-            height="16"
-            alt="country"
+            width='22'
+            height='16'
+            alt='country'
           />
         </Span>
-        <P fontSize="14px">{props.date}</P>
-        <P fontSize="13px">{props.type}</P>
+        <P fontSize='14px'>{props.date}</P>
+        <P fontSize='13px'>{props.type}</P>
         <br />
         <UL>
           {props.activities.map((act, index) => (
@@ -56,12 +55,7 @@ const ExperienceBlock = (props) => (
         </UL>
       </Col>
       <Col xs={24} sm={24} md={12} lg={12} xl={12}>
-        <a
-          href={props.website}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
+        <a href={props.website} target='_blank' rel='noopener noreferrer'></a>
       </Col>
     </Row>
   </Col>

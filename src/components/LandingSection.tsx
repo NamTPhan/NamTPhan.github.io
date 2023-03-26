@@ -5,9 +5,9 @@ import {
   LinkedinOutlined,
   AndroidOutlined,
   GithubOutlined,
-  HeartTwoTone
+  HeartTwoTone,
 } from "@ant-design/icons";
-import { LightSpeed, Fade } from 'react-reveal';
+import { LightSpeed, Fade } from "react-reveal";
 
 import styled, { withTheme } from "styled-components";
 import * as Colors from "../styles/Colors";
@@ -53,61 +53,61 @@ const A = styled.a`
       color: ${Colors.White};
     }
   }
- 
 `;
 
-const LandingSection = (props) => (
-  <Row style={{ height: '95vh', paddingTop: 20 }}>
+const LandingSection = props => (
+  <Row style={{ height: "95vh", paddingTop: 20 }}>
     <Col span={24}>
       <Fade>
         <H1>
           Hi, my name is <B>Nam Phan</B>
         </H1>
       </Fade>
+      <H2>Front-End Developer - Mobile & Web - Software Engineer</H2>
       <H2>
-        Front-End Developer - Mobile & Web - Software Engineer
-      </H2>
-      <H2>
-        I build things for the web and mobile, and I <HeartTwoTone twoToneColor={Colors.Red} /> what I do.
+        I build things for the web and mobile, and I{" "}
+        <HeartTwoTone twoToneColor={Colors.Red} /> what I do.
       </H2>
       <LightSpeed>
-        <Col align='center'>
+        <Col>
           <A
-            href="https://www.linkedin.com/in/namtphan2"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button style={{ backgroundColor: '#2196f3' }} icon={<LinkedinOutlined />} size={'large'} />
-          </A>
-          <A
-            href="https://play.google.com/store/apps/developer?id=NPDevelopment+Apps"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://www.linkedin.com/in/namtphan2'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <Button
-              style={{ backgroundColor: '#4caf50' }}
+              style={{ backgroundColor: "#2196f3" }}
+              icon={<LinkedinOutlined />}
+              size={"large"}
+            />
+          </A>
+          <A
+            href='https://play.google.com/store/apps/developer?id=NPDevelopment+Apps'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <Button
+              style={{ backgroundColor: "#4caf50" }}
               icon={<AndroidOutlined />}
-              size={'large'}
+              size={"large"}
             />
           </A>
           <A
-            href="https://github.com/NamTPhan"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://github.com/NamTPhan'
+            target='_blank'
+            rel='noopener noreferrer'
           >
             <Button
-              style={{ backgroundColor: '#607d8b' }}
+              style={{ backgroundColor: "#607d8b" }}
               icon={<GithubOutlined />}
-              size={'large'}
+              size={"large"}
             />
           </A>
-          <A
-            href="mailto:namtphann@gmail.com"
-          >
+          <A href='mailto:namtphann@gmail.com'>
             <Button
-              style={{ backgroundColor: '#f44336' }}
+              style={{ backgroundColor: "#f44336" }}
               icon={<MailOutlined />}
-              size={'large'}
+              size={"large"}
             />
           </A>
         </Col>
