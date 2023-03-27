@@ -1,68 +1,29 @@
 import React from "react";
 import { HeartTwoTone } from "@ant-design/icons";
-
-import * as Colors from "../styles/Colors";
-
 import Laptop from "../assets/svg/laptop.svg";
 import LinkedinLogo from "../assets/svg/linkedin-3.svg";
 import AndroidLogo from "../assets/svg/android-green-round-2.svg";
 import GithubLogo from "../assets/svg/github.svg";
+import * as Colors from "../styles/Colors";
 
-const LandingSection = props => {
-  // const H1 = styled.h1`
-  //   font-size: 3rem;
-  //   font-weight: 800;
-  //   color: ${({ theme }) => theme.titleText};
-  //   text-align: center;
-  // `;
-
-  // const H2 = styled.h2`
-  //   font-size: 1.5rem;
-  //   font-weight: 400;
-  //   color: ${({ theme }) => theme.titleText};
-  //   text-align: center;
-  // `;
-
-  // const Illustration = styled.img`
-  //   width: 70%;
-  //   height: 500px;
-  //   margin-left: auto;
-  //   margin-right: auto;
-  //   display: flex;
-  // `;
-
-  // const B = styled.b`
-  //   color: ${({ theme }) => theme.name};
-  // `;
-
-  // const A = styled.a`
-  //   color: ${({ theme }) => theme.titleText};
-  //   margin: 0 8px;
-
-  //   button {
-  //     border-radius: 20px !important;
-  //     border: none;
-
-  //     span {
-  //       font-size: 20px !important;
-  //       color: ${Colors.White};
-  //     }
-  //   }
-  // `;
-
+export const LandingSection = () => {
   return (
-    <div className='pt-4'>
-      <div className='flex flex-col'>
-        <h1>
-          Hi, my name is <b>Nam Phan</b>
-        </h1>
-        <h2>Front-End Developer - Mobile & Web - Software Engineer</h2>
-        <h2>
-          I build things for the web and mobile, and I{" "}
-          <HeartTwoTone twoToneColor={Colors.Red} /> what I do.
-        </h2>
+    <>
+      <div className='pt-4 flex flex-col text-center'>
+        <div className='flex flex-col space-y-5'>
+          <h1 className='text-5xl'>
+            Hi, my name is <b className='text-[#0ea5e9]'>Nam Phan</b>
+          </h1>
+          <h2 className='text-3xl'>
+            Front-End Developer - Mobile & Web - Software Engineer
+          </h2>
+          <h2 className='text-2xl'>
+            I build things for the web and mobile, and I{" "}
+            <HeartTwoTone twoToneColor={Colors.Red} /> what I do.
+          </h2>
+        </div>
 
-        <div className='flex flex-row'>
+        <div className='flex flex-row justify-center'>
           <a
             href='https://www.linkedin.com/in/namtphan2'
             target='_blank'
@@ -86,11 +47,9 @@ const LandingSection = props => {
           </a>
         </div>
       </div>
-      <div className='w-full'>
-        <img src={Laptop} alt='laptop' />
+      <div className='my-10'>
+        <img className='flex h-[500px] mx-auto' src={Laptop} alt='laptop' />
       </div>
-    </div>
+    </>
   );
 };
-
-export default LandingSection;
