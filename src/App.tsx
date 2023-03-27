@@ -1,8 +1,4 @@
 import React, { useState } from "react";
-import { Row, Col } from "antd";
-import { DefaultTheme, ThemeProvider } from "styled-components";
-import { lightTheme, darkTheme } from "./themes/themes";
-import GlobalStyle from "./styles/global-style";
 
 import LandingSection from "./components/LandingSection";
 import AboutSection from "./components/AboutSection";
@@ -10,37 +6,34 @@ import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
 
-import "antd/dist/reset.css";
-
 const App = () => {
-  const [theme, setTheme] = useState<DefaultTheme>(lightTheme);
+  const [theme, setTheme] = useState("");
 
   const themeToggler = () => {
-    setTheme(theme.title === "light" ? darkTheme : lightTheme);
+    setTheme("dark");
   };
 
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Row>
-        <Col style={{ textAlign: "center", paddingTop: 20 }} span={24}>
+    <>
+      <div className='flex flex-row'>
+        <div className='my-4'>
           <img
-            src={require(`./assets/${
-              theme.title === "dark" ? "sun" : "moon"
+            src={require(`./assets/svg/${
+              theme === "dark" ? "sun" : "moon"
             }.svg`)}
             width='35'
             height='35'
             alt='theme-toggler'
             onClick={themeToggler}
           />
-        </Col>
-      </Row>
+        </div>
+      </div>
       <LandingSection />
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
       <Footer />
-    </ThemeProvider>
+    </>
   );
 };
 
