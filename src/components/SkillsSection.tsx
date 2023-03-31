@@ -1,86 +1,41 @@
 import React from "react";
 import { EditTwoTone, LayoutTwoTone, MobileTwoTone } from "@ant-design/icons";
-
 import * as Colors from "../styles/Colors";
 
-const CardBlock = props => {
-  // const StyledCard = styled.div`
-  //   background-color: ${Colors.Transparent};
-  //   margin-left: 20px;
-  //   margin-right: 20px;
-  //   margin-bottom: 20px;
-  //   border: none;
-  //   height: 350px;
-  // `;
-
-  // const CardTitle = styled.h1`
-  //   color: ${Colors.Blue};
-  //   font-weight: 800;
-  //   font-size: 1.2rem;
-  // `;
-
-  // const CardSubText = styled.b`
-  //   font-size: 1rem;
-  //   color: ${({ theme }) => theme.titleText};
-  // `;
-
-  // const CardDescription = styled.p`
-  //   font-weight: 500;
-  //   font-size: 15px;
-  //   color: ${({ theme }) => theme.titleText};
-  // `;
-
-  // const Icon = styled.p`
-  //   font-size: 48px;
-  //   margin-bottom: 20px;
-  // `;
-
-  return (
-    <div style={{ textAlign: "center" }}>
-      <div>
-        <p>{props.icon}</p>
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
-        <b>Tools that I use:</b>
-        <p>{props.tools}</p>
+const CardBlock = props => (
+  <div className='flex text-center px-4'>
+    <div className='max-w-sm overflow-hidden rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl'>
+      <div className='text-5xl'>{props.icon}</div>
+      <p className='mt-2 font-semibold'>{props.title}</p>
+      <div className='p-5'>
+        <p className='text-medium mb-5 text-gray-700'>{props.tools}</p>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
-const SkillsSection = () => {
-  // const H1 = styled.h1`
-  //   font-size: 2rem;
-  //   font-weight: 800;
-  //   color: ${({ theme }) => theme.titleText};
-  //   text-align: center;
-  // `;
-
-  return (
-    <div style={{ margin: "100px 0" }}>
-      <h1>Skills & Experience</h1>
-
-      <div style={{ paddingLeft: "20px", paddingRight: "20px" }}>
-        <CardBlock
-          icon={<LayoutTwoTone twoToneColor={Colors.Pink} />}
-          title='Web Development'
-          description='I like to code web apps from scratch by using awesome libraries and frameworks.'
-          tools='JavaScript, TypeScript, React, Vue.js, Tailwind CSS, (S)CSS, styled-components, Angular, Redux, Pinia, VS Code'
-        />
-        <CardBlock
-          icon={<MobileTwoTone twoToneColor={Colors.Green} />}
-          title='Mobile Development'
-          description='I also like to create mobile apps that could help people in their daily lives or for entertainment.'
-          tools='Java, React Native, Ionic, VS Code, Android Studio'
-        />
-        <CardBlock
-          icon={<EditTwoTone />}
-          title='Design & Other tools'
-          description='I like to keep the design simple and clean.'
-          tools='Photoshop, ui8.net, Git, GitLab, Terminal, Sourcetree/Gitkraken, Postman, RunJS'
-        />
-      </div>
+export const SkillsSection = () => (
+  <div className='py-[100px] h-auto'>
+    <h1 className='text-3xl font-bold text-center'>Skills & Experience</h1>
+    <div className='flex flex-col sm:flex-row justify-center'>
+      <CardBlock
+        icon={<LayoutTwoTone twoToneColor={Colors.Pink} />}
+        title='Web Development'
+        description='I like to code web apps from scratch by using awesome libraries and frameworks.'
+        tools='JavaScript, TypeScript, React, Vue.js, Tailwind CSS, (S)CSS, styled-components, Angular, Redux, Pinia, VS Code'
+      />
+      <CardBlock
+        icon={<MobileTwoTone twoToneColor={Colors.Green} />}
+        title='Mobile Development'
+        description='I also like to create mobile apps that could help people in their daily lives or for entertainment.'
+        tools='Java, React Native, Ionic, VS Code, Android Studio'
+      />
+      <CardBlock
+        icon={<EditTwoTone />}
+        title='Design & Other tools'
+        description='I like to keep the design simple and clean.'
+        tools='Photoshop, ui8.net, Git, GitLab, Terminal, Sourcetree/Gitkraken, Postman, RunJS'
+      />
     </div>
-  );
-};
-export default SkillsSection;
+  </div>
+);

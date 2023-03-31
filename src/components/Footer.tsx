@@ -1,34 +1,16 @@
 import React from "react";
 
-import * as Colors from "../styles/Colors";
-
-const ContactSection = props => {
-  return (
-    <div>
-      <div
-        style={{
-          padding: "0 2rem 1rem 2rem",
-          textAlign: "center",
-        }}
-      >
-        <p style={{ marginTop: "30px" }}>
-          © 2023 Designed & Developed by <b>Nam Phan</b>
-          <br />
-          Built with{" "}
-          <b>
-            <a
-              href='https://ant.design/'
-              target='_blank'
-              rel='noopener noreferrer'
-              style={{ color: Colors.White }}
-            >
-              Tailwind CSS
-            </a>
-          </b>
-        </p>
-      </div>
-    </div>
-  );
-};
-
-export default ContactSection;
+export const FooterSection = () => (
+  <div className='text-center py-5'>
+    <p className='mt-7'>
+      © 2023 Designed & Developed by <b>Nam Phan</b>
+      <br />
+      Built with{" "}
+      <b>
+        <a href='https://ant.design/' target='_blank' rel='noopener noreferrer'>
+          Tailwind CSS
+        </a>
+      </b>
+    </p>
+  </div>
+);

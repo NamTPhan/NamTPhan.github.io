@@ -2,9 +2,9 @@ import React, { useState } from "react";
 
 import { LandingSection } from "./components/LandingSection";
 import { AboutSection } from "./components/AboutSection";
-import SkillsSection from "./components/SkillsSection";
+import { SkillsSection } from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
-import Footer from "./components/Footer";
+import { FooterSection } from "./components/Footer";
 import "./index.css";
 
 const App = () => {
@@ -33,7 +33,7 @@ const App = () => {
       <AboutSection />
       <SkillsSection />
       <ProjectsSection />
-      <Footer />
+      <FooterSection />
     </>
   );
 };
