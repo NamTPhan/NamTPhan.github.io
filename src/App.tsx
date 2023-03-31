@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import { LandingSection } from "./components/LandingSection";
-import AboutSection from "./components/AboutSection";
+import { AboutSection } from "./components/AboutSection";
 import SkillsSection from "./components/SkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import Footer from "./components/Footer";
@@ -11,12 +11,12 @@ const App = () => {
   const [theme, setTheme] = useState("");
 
   const themeToggler = () => {
-    setTheme("dark");
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   return (
     <>
-      <div className='flex flex-row'>
+      <div className='flex flex-row justify-center'>
         <div className='my-4'>
           <img
             src={require(`./assets/svg/${

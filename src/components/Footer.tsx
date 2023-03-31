@@ -22,7 +22,7 @@ const ContactSection = props => {
               rel='noopener noreferrer'
               style={{ color: Colors.White }}
             >
-              Ant Design
+              Tailwind CSS
             </a>
           </b>
         </p>
