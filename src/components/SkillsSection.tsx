@@ -3,9 +3,9 @@ import { EditTwoTone, LayoutTwoTone, MobileTwoTone } from "@ant-design/icons";
 import * as Colors from "../styles/Colors";
 
 const CardBlock = props => (
-  <div className='flex text-center px-4'>
+  <div className='flex text-center justify-center p-4'>
     <div className='max-w-sm overflow-hidden rounded-xl bg-white shadow-md duration-200 hover:scale-105 hover:shadow-xl'>
-      <div className='text-5xl'>{props.icon}</div>
+      <div className='text-5xl pt-3'>{props.icon}</div>
       <p className='mt-2 font-semibold'>{props.title}</p>
       <div className='p-5'>
         <p className='text-medium mb-5 text-gray-700'>{props.tools}</p>

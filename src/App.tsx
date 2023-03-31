@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { LandingSection } from "./components/LandingSection";
 import { AboutSection } from "./components/AboutSection";
 import { SkillsSection } from "./components/SkillsSection";
-import ProjectsSection from "./components/ProjectsSection";
+import { ProjectsSection } from "./components/ProjectsSection";
 import { FooterSection } from "./components/Footer";
 import "./index.css";
 

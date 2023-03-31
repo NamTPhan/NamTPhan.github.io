@@ -1,114 +1,81 @@
 import React from "react";
-import { AndroidFilled, LinkOutlined } from "@ant-design/icons";
-
+import LinkIcon from "../assets/svg/link.svg";
+import AndroidIcon from "../assets/svg/android-green.svg";
 import ProjectsData from "../data/projects.json";
 import * as Colors from "../styles/Colors";
 
-const ProjectsSection = () => {
-  // const H1 = styled.h1`
-  //   font-size: 2rem;
-  //   font-weight: 800;
-  //   color: ${({ theme }) => theme.titleText};
-  //   text-align: center;
-  // `;
-
-  // const H3 = styled.h3`
-  //   font-size: 1rem;
-  //   font-weight: 700;
-  //   color: ${({ theme }) => theme.titleText};
-  //   text-align: center;
-  // `;
-
-  // const P = styled.p`
-  //   font-size: 1rem;
-  //   font-weight: 500;
-  //   color: ${({ theme }) => theme.titleText};
-  // `;
-
-  // const B = styled.b`
-  //   font-size: 1rem;
-  //   font-weight: bold;
-  //   color: ${({ theme }) => theme.titleText};
-  // `;
-
+export const ProjectsSection = () => {
   // const FeatureImage = styled.img`
   //   width: 100%;
   //   max-height: 500px;
   // `;
 
   return (
-    <div style={{ marginBottom: 80 }}>
+    <div className='mb-20'>
       <div>
-        <h1>Some of my Works</h1>
-        <h3 style={{ marginBottom: 20 }}>
+        <h1 className='text-3xl font-bold text-center'>Some of my Works</h1>
+        <h3 className='text-xl mb-5 text-center'>
           Below are just a few projects that I have worked on in the past.
         </h3>
+
         {ProjectsData.map(project => {
           return (
-            <div key={project.name}>
-              <div style={{ marginBottom: 15 }}>
-                {project.imageLeftRight === "left" && (
-                  <div>
-                    <img
-                      src={require("../assets/projects/" +
-                        project.image +
-                        ".png")}
-                      alt={project.name}
-                    />
-                  </div>
-                )}
-                <div
-                  style={{ margin: "auto", paddingLeft: 15, paddingRight: 15 }}
-                >
-                  <b>
-                    {project.name} - {project.type}
-                  </b>
-                  <p>{project.description}</p>
-                  {project.android && (
-                    <a
-                      href={project.android}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <AndroidFilled
-                        style={{ fontSize: "26px", color: Colors.Green }}
-                      />
-                    </a>
-                  )}
-                  {project.website && (
-                    <a
-                      href={project.website}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      <LinkOutlined style={{ fontSize: "26px" }} />
-                    </a>
-                  )}
-                  <br />
-                  {project.tags.map((tag, index) => (
-                    <div
-                      key={tag + index}
-                      color={Colors.Blue}
-                      style={{
-                        marginTop: 10,
-                        fontSize: 14,
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {tag}
+            <div key={project.name} className='md:px-6 lg:px-20 2xl:px-80 mb-5'>
+              <div className='relative block p-8 overflow-hidden border bg-white border-slate-200 rounded-lg  duration-200 hover:scale-105 hover:shadow-xl'>
+                <span className='absolute inset-x-0 bottom-0 h-2 bg-gradient-to-r from-green-300 via-blue-500 to-purple-600' />
+                <div className='flex flex-row'>
+                  <div className='flex flex-col flex-1'>
+                    <h1 className='text-xl font-bold text-slate-900'>
+                      {project.name}
+                    </h1>
+                    <p className='mt-1 text-sm font-medium text-slate-600'>
+                      {project.type}
+                    </p>
+                    <p className='text-base my-2'>{project.description}</p>
+                    <dl className='flex mt-3 mb-3'>
+                      <div className='flex'>
+                        {project.android && (
+                          <a
+                            href={project.android}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                          >
+                            <img src={AndroidIcon} />
+                          </a>
+                        )}
+                        {project.website && (
+                          <a
+                            href={project.website}
+                            target='_blank'
+                            rel='noopener noreferrer'
+                          >
+                            <img src={LinkIcon} />
+                          </a>
+                        )}
+                      </div>
+                    </dl>
+                    <div className='flex'>
+                      {project.tags.map(tag => (
+                        <div
+                          key={tag}
+                          className='bg-[#94a3b8] text-white px-3 rounded-full mr-2'
+                        >
+                          {tag}
+                        </div>
+                      ))}
                     </div>
-                  ))}
-                </div>
-                {project.imageLeftRight === "right" && (
-                  <div>
+                  </div>
+
+                  <div className='hidden ml-3 sm:flex sm:flex-1'>
                     <img
+                      className='rounded-lg'
                       src={require("../assets/projects/" +
                         project.image +
                         ".png")}
                       alt={project.name}
                     />
                   </div>
-                )}
+                </div>
               </div>
             </div>
           );
@@ -117,5 +84,3 @@ const ProjectsSection = () => {
     </div>
   );
 };
-
-export default ProjectsSection;
