@@ -11,14 +11,16 @@ export const AboutSection = () => (
       />
     </div>
     <div>
-      <h1 className='text-3xl mt-3'>Hello! I'm Nam. Nice to meet you.</h1>
+      <h1 className='text-3xl mt-3 dark:text-white'>
+        Hello! I'm Nam. Nice to meet you.
+      </h1>
       <div className=''>
-        <section className='relative isolate overflow-hidden bg-white px-4 py-14 sm:py-18'>
-          <div className='absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20'></div>
-          <div className='absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center'></div>
+        <section className='relative isolate overflow-hidden bg-white dark:bg-slate-700 px-4 py-14 sm:py-18'>
+          <div className='absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.indigo.100),white)] opacity-20 dark:opacity-0'></div>
+          <div className='absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white dark:bg-slate-700 shadow-xl shadow-indigo-600/10 ring-1 ring-indigo-50 dark:ring-0 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center'></div>
           <div className='mx-auto max-w-2xl lg:max-w-4xl'>
             <blockquote className='text-center text-lg leading-8 text-gray-900 sm:text-xl sm:leading-9'>
-              <p>
+              <p className='dark:text-white'>
                 “I am a front-end developer working at Capgemini. Currently I am
                 more of a front-end developer, but long-term I intend to move
                 towards becoming a full-stack developer. I'm a flexible and

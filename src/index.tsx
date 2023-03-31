@@ -1,4 +1,4 @@
-import React, { StrictMode } from "react";
+import React from "react";
 import * as ReactDOMClient from "react-dom/client";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
@@ -9,4 +9,5 @@ const container =
 const root = ReactDOMClient.createRoot(container);
 root.render(<App />);
 
+localStorage.setItem("theme", "light");
 serviceWorker.unregister();

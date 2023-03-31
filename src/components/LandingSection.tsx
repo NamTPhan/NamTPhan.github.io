@@ -1,28 +1,25 @@
 import React from "react";
-import { HeartTwoTone } from "@ant-design/icons";
 import Laptop from "../assets/svg/laptop.svg";
 import LinkedinLogo from "../assets/svg/linkedin-3.svg";
 import AndroidLogo from "../assets/svg/android-green-round-2.svg";
 import GithubLogo from "../assets/svg/github.svg";
-import * as Colors from "../styles/Colors";
 
 export const LandingSection = () => (
   <>
-    <div className='pt-4 flex flex-col text-center'>
+    <div className='pt-4 flex flex-col text-center dark:bg-slate-700'>
       <div className='flex flex-col space-y-5'>
-        <h1 className='text-5xl'>
-          Hi, my name is <b className='text-[#0ea5e9]'>Nam Phan</b>
+        <h1 className='text-5xl dark:text-white'>
+          Hi, my name is <b className='text-sky-500'>Nam Phan</b>
         </h1>
-        <h2 className='text-3xl'>
+        <h2 className='text-3xl px-1 sm:px-0 dark:text-white'>
           Front-End Developer - Mobile & Web - Software Engineer
         </h2>
-        <h2 className='text-2xl'>
-          I build things for the web and mobile, and I{" "}
-          <HeartTwoTone twoToneColor={Colors.Red} /> what I do.
+        <h2 className='text-2xl px-1 sm:px-0 dark:text-white'>
+          I build things for the web and mobile, and I sss what I do.
         </h2>
       </div>
 
-      <div className='flex flex-row justify-center'>
+      <div className='flex flex-row justify-center mt-5'>
         <a
           href='https://www.linkedin.com/in/namtphan2'
           target='_blank'
