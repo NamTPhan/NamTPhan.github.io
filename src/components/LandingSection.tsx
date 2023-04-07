@@ -3,6 +3,7 @@ import Laptop from "../assets/svg/laptop.svg";
 import LinkedinLogo from "../assets/svg/linkedin-3.svg";
 import AndroidLogo from "../assets/svg/android-green-round-2.svg";
 import GithubLogo from "../assets/svg/github.svg";
+import TailwindComponents from "../assets/svg/tailwindcomponents.svg";
 
 export const LandingSection = () => (
   <>
@@ -14,9 +15,9 @@ export const LandingSection = () => (
         <h2 className='text-3xl px-1 sm:px-0 dark:text-white'>
           Front-End Developer - Mobile & Web - Software Engineer
         </h2>
-        <h2 className='text-2xl px-1 sm:px-0 dark:text-white'>
-          I build things for the web and mobile, and I sss what I do.
-        </h2>
+        <span className='flex justify-center text-2xl px-1 sm:px-0 dark:text-white '>
+          I build things for the web and mobile, and I love what I do.
+        </span>
       </div>
 
       <div className='flex flex-row justify-center mt-5'>
@@ -40,6 +41,18 @@ export const LandingSection = () => (
           rel='noopener noreferrer'
         >
           <img src={GithubLogo} alt='github' />
+        </a>
+        <a
+          href='https://tailwindcomponents.com/u/nam'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='flex flex-col justify-center ml-0.5'
+        >
+          <img
+            src={TailwindComponents}
+            className='bg-white rounded-full p-1 border border-slate-700'
+            alt='tailwindcomponents'
+          />
         </a>
       </div>
     </div>
