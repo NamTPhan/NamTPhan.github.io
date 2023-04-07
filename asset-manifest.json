@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.07bc8e1f.css",
-    "main.js": "/static/js/main.521e2830.js",
+    "main.css": "/static/css/main.a1354f61.css",
+    "main.js": "/static/js/main.3dfe0607.js",
     "static/media/teslaclone.png": "/static/media/teslaclone.6cbf0e5eb69b14728dca.png",
     "static/media/easyworx.png": "/static/media/easyworx.3fa8336d378399118419.png",
     "static/media/sustainablechoice.png": "/static/media/sustainablechoice.f61fad9841fdd993b7d5.png",
@@ -18,15 +18,16 @@
     "static/media/github.svg": "/static/media/github.f3ee90332d428523aec5af1e31f93478.svg",
     "static/media/moon.svg": "/static/media/moon.717c6e4839d2002ebdf5.svg",
     "static/media/linkedin-3.svg": "/static/media/linkedin-3.00104e1f039a9d52be1aed047609b726.svg",
+    "static/media/tailwindcomponents.svg": "/static/media/tailwindcomponents.631d692b3b62740342783d9abae8c43e.svg",
     "index.html": "/index.html",
     "static/media/link.svg": "/static/media/link.d5916136b6a7844c66078ef2d416d46b.svg",
-    "static/media/heart-outline.svg": "/static/media/heart-outline.8f0f50bf135ed097f81c.svg",
+    "static/media/heart-outline.svg": "/static/media/heart-outline.e27f729f3796e60cbec8.svg",
     "static/media/mobile.svg": "/static/media/mobile.3bc860f7dabae88b949c.svg",
-    "main.07bc8e1f.css.map": "/static/css/main.07bc8e1f.css.map",
-    "main.521e2830.js.map": "/static/js/main.521e2830.js.map"
+    "main.a1354f61.css.map": "/static/css/main.a1354f61.css.map",
+    "main.3dfe0607.js.map": "/static/js/main.3dfe0607.js.map"
   },
   "entrypoints": [
-    "static/css/main.07bc8e1f.css",
-    "static/js/main.521e2830.js"
+    "static/css/main.a1354f61.css",
+    "static/js/main.3dfe0607.js"
   ]
 }
