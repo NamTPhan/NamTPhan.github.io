@@ -20,7 +20,7 @@ const App = () => {
     <div className={theme}>
       <div className='dark:bg-slate-700'>
         <div className='flex flex-row justify-center'>
-          <div className='my-4'>
+          <div className='my-4 cursor-pointer'>
             <img
               src={require(`./assets/svg/${
                 theme === "dark" ? "sun" : "moon"

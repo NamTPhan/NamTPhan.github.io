@@ -24,9 +24,7 @@ export const ProjectsSection = () => {
                     <div className='block md:hidden mb-3'>
                       <img
                         className='rounded-lg'
-                        src={require("../assets/projects/" +
-                          project.image +
-                          ".png")}
+                        src={require("../assets/projects/" + project.image)}
                         alt={project.name}
                       />
                     </div>
@@ -76,9 +74,7 @@ export const ProjectsSection = () => {
                   <div className='hidden ml-3 md:flex sm:flex-1'>
                     <img
                       className='rounded-lg'
-                      src={require("../assets/projects/" +
-                        project.image +
-                        ".png")}
+                      src={require("../assets/projects/" + project.image)}
                       alt={project.name}
                     />
                   </div>
