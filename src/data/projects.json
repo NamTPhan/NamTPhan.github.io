@@ -1,5 +1,21 @@
 [
   {
+    "id": "fakestorereact",
+    "name": "Fake Store React",
+    "description": "Fake store built with React. Used dummyJSON.com as back-end for product data.",
+    "image": "fakestorereact.png",
+    "tags": [
+      "TypeScript",
+      "React 18",
+      "Redux",
+      "Redux Toolkit",
+      "Tailwind CSS"
+    ],
+    "type": "Side project",
+    "android": "",
+    "website": "https://fake-store-react-ntp.netlify.app/"
+  },
+  {
     "id": "fakestorevue",
     "name": "Fake Store Vue",
     "description": "Fake store built with Vue 3. Used dummyJSON.com as back-end for product data.",
@@ -7,10 +23,7 @@
     "tags": ["TypeScript", "Vue 3", "Pinia", "Tailwind CSS"],
     "type": "Side project",
     "android": "",
-    "website": "https://fake-store-vue.netlify.app/",
-    "slideLeft": true,
-    "slideRight": false,
-    "imageLeftRight": "left"
+    "website": "https://fake-store-vue.netlify.app/"
   },
   {
     "id": "teslaclone",
@@ -20,10 +33,7 @@
     "tags": ["JavaScript", "Vue 3", "Tailwind CSS"],
     "type": "Side project",
     "android": "",
-    "website": "https://tesla-clone-ntp.netlify.app/",
-    "slideLeft": false,
-    "slideRight": true,
-    "imageLeftRight": "right"
+    "website": "https://tesla-clone-ntp.netlify.app/"
   },
   {
     "id": "sustainablechoice",
@@ -33,10 +43,7 @@
     "tags": ["JavaScript", "React Native", "Redux", "Firebase", "Expo"],
     "type": "Startup",
     "android": "",
-    "website": "",
-    "slideLeft": true,
-    "slideRight": false,
-    "imageLeftRight": "left"
+    "website": ""
   },
   {
     "id": "countrybucketlist",
@@ -46,10 +53,7 @@
     "tags": ["JavaScript", "React Native", "Redux", "NativeBase", "Expo"],
     "type": "Side project",
     "android": "https://play.google.com/store/apps/details?id=com.npdevelopment.countrybucketlist",
-    "website": "",
-    "slideLeft": false,
-    "slideRight": true,
-    "imageLeftRight": "right"
+    "website": ""
   },
   {
     "id": "mystudyprogress",
@@ -59,10 +63,7 @@
     "tags": ["TypeScript", "Ionic", "Chart.js"],
     "type": "Side project",
     "android": "https://play.google.com/store/apps/details?id=com.npdevelopment.mystudyprogress",
-    "website": "",
-    "slideLeft": true,
-    "slideRight": false,
-    "imageLeftRight": "left"
+    "website": ""
   },
   {
     "id": "easyworx",
@@ -72,9 +73,6 @@
     "tags": ["Next.js", "Redux", "styled-components", "Formik"],
     "type": "Internship project",
     "android": "",
-    "website": "http://vacatures.easyworx.nl",
-    "slideLeft": false,
-    "slideRight": true,
-    "imageLeftRight": "right"
+    "website": "http://vacatures.easyworx.nl"
   }
 ]
