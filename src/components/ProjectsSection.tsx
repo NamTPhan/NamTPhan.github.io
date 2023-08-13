@@ -14,7 +14,7 @@ export const ProjectsSection = () => {
           Below are just a few projects that I have worked on in the past.
         </h3>
 
-        {ProjectsData.map(project => {
+        {ProjectsData.map((project: any) => {
           return (
             <div key={project.name} className='md:px-6 lg:px-20 2xl:px-80 mb-5'>
               <div className='relative block p-8 overflow-hidden border bg-white dark:bg-slate-700 border-slate-200 rounded-lg  duration-200 hover:scale-105 hover:shadow-xl'>
@@ -68,6 +68,11 @@ export const ProjectsSection = () => {
                           {tag}
                         </div>
                       ))}
+                      {project.published === false && (
+                        <div className='bg-red-500 text-white px-3 rounded-full mr-2 mt-1'>
+                          Unpublished
+                        </div>
+                      )}
                     </div>
                   </div>
 

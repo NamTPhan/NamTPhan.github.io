@@ -48,11 +48,12 @@
   {
     "id": "countrybucketlist",
     "name": "Country Bucket List",
-    "description": "Country Bucket List, is an easy way to manage multiple bucket lists. Instead of one big bucket list you create several separated bucket lists for each country you visit or are planning to visit. ",
+    "description": "Country Bucket List, is an easy way to manage multiple bucket lists. Instead of one big bucket list you create several separated bucket lists for each country you visit or are planning to visit. U",
     "image": "countrybucketlist.png",
     "tags": ["JavaScript", "React Native", "Redux", "NativeBase", "Expo"],
     "type": "Side project",
-    "android": "https://play.google.com/store/apps/details?id=com.npdevelopment.countrybucketlist",
+    "published": false,
+    "android": "",
     "website": ""
   },
   {
@@ -62,17 +63,8 @@
     "image": "mystudyprogress.png",
     "tags": ["TypeScript", "Ionic", "Chart.js"],
     "type": "Side project",
-    "android": "https://play.google.com/store/apps/details?id=com.npdevelopment.mystudyprogress",
-    "website": ""
-  },
-  {
-    "id": "easyworx",
-    "name": "Easyworx",
-    "description": "A job vacancy website where job seekers can find jobs based on their search preferences. I contributed to various features like generic components, forms, Google-for-Jobs and other front-end functionalities.",
-    "image": "easyworx.png",
-    "tags": ["Next.js", "Redux", "styled-components", "Formik"],
-    "type": "Internship project",
+    "published": false,
     "android": "",
-    "website": "http://vacatures.easyworx.nl"
+    "website": ""
   }
 ]

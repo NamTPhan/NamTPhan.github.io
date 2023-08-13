@@ -21,13 +21,14 @@ export const AboutSection = () => (
           <div className='mx-auto max-w-2xl lg:max-w-4xl'>
             <blockquote className='text-center text-lg leading-8 text-gray-900 sm:text-xl sm:leading-9'>
               <p className='dark:text-white'>
-                “I am a front-end developer working at Capgemini. Currently I am
-                more of a front-end developer, but long-term I intend to move
-                towards becoming a full-stack developer. I'm a flexible and
-                organized team player. I like to work with people from all over
-                the world to learn more about different cultures. In my spare
-                time I like to work on my own projects, watching series, being
-                creative with my 3D-printer and reading stuff about new tech.”
+                “I am a front-end developer working at a company in The
+                Netherlands. Currently I am more of a front-end developer, but
+                long-term I intend to move towards becoming a full-stack
+                developer. I'm a flexible and organized team player. I like to
+                work with people from all over the world to learn more about
+                different cultures. In my spare time I like to work on my own
+                projects, watching series, being creative with my 3D-printer and
+                reading stuff about new tech.”
               </p>
             </blockquote>
           </div>
